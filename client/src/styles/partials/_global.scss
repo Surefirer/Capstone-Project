@@ -1,0 +1,40 @@
+html,
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Avenir Regular;
+    font-size: 16px;
+    color: $black;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+a:link,
+a:visited {
+    display: flex;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+input,
+input:focus,
+textarea,
+textarea:focus,
+button {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: $black;
+}
