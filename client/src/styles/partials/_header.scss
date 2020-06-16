@@ -1,8 +1,17 @@
-// .nav-bar {
-//     &__menu {
-//         display: none;
-//     }
-// }
-.nav-bar__menu {
-    display: none;
+.nav-bar {
+    background-color: rgb(78, 77, 77);
+    height: 50px;
+    &__menu {
+        display: none;
+    }
+    &__logo {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__logo img {
+        width: 100px;
+        z-index: 300;
+    }
 }

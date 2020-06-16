@@ -1,11 +1,15 @@
 import React from "react";
 import { Logos } from "./assets";
-import { NavLink, Link } from "react-router-dom";
+import DrawerToggleButton from "../components/sideDrawer/DrawerToggleButton";
+//import { NavLink, Link } from "react-router-dom";
 
-function Header({ currentTab, changeCurrentTab }) {
+function Header(props) {
   return (
     <>
       <div className="nav-bar">
+        <div>
+          <DrawerToggleButton click={props.drawerClickHandler} />
+        </div>
         <div className="nav-bar__logo">
           <img src={Logos.logo} alt="yyro logo" />
         </div>
