@@ -8,6 +8,10 @@ body {
     height: 100%;
 }
 
+Link {
+    color: $white;
+}
+
 *,
 *:before,
 *:after {
@@ -23,6 +27,11 @@ a:visited {
 ul {
     list-style: none;
     padding: 0;
+}
+
+a,
+li {
+    color: white;
 }
 
 input,
