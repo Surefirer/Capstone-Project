@@ -28,6 +28,11 @@ a:visited {
   text-decoration: none;
 }
 
+p {
+  padding: 0;
+  margin: 0;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -70,7 +75,7 @@ textarea::placeholder {
 }
 
 .nav-bar {
-  background-color: #4e4d4d;
+  background-color: #1e1e1e;
   height: 50px;
 }
 
@@ -207,5 +212,14 @@ textarea::placeholder {
   left: 0;
   background: rgba(0, 0, 0, 0.1);
   z-index: 100;
+}
+
+.main__hero {
+  background-color: #1e1e1e;
+  height: 400px;
+  background-image: url("../assets/images/hero.png");
+  background-repeat: no-repeat;
+  background-size: 170px;
+  background-position: 50% 100%;
 }
 /*# sourceMappingURL=main.css.map */

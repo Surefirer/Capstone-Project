@@ -1,0 +1,10 @@
+.main {
+    &__hero {
+        background-color: #1e1e1e;
+        height: 400px;
+        background-image: url("../assets/images/hero.png");
+        background-repeat: no-repeat;
+        background-size: 170px;
+        background-position: 50% 100%;
+    }
+}

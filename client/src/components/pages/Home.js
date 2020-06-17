@@ -2,8 +2,14 @@ import React from "react";
 
 function Home() {
   return (
-    <div>
-      <h1>Home Page:)</h1>
+    <div className="main">
+      <div className="main__hero">
+        <p>clock</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi qui
+          laudantium in, iure placeat ullam ab odit delectus facere aliquam.
+        </p>
+      </div>
     </div>
   );
 }
