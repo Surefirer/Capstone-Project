@@ -2,7 +2,7 @@ html,
 body {
     margin: 0;
     box-sizing: border-box;
-    font-family: Avenir Regular;
+    font-family: TitilliumWeb-Regular;
     font-size: 16px;
     color: $black;
     height: 100%;
@@ -24,6 +24,9 @@ a:visited {
     text-decoration: none;
 }
 
+h1,
+h2,
+h3,
 p {
     padding: 0;
     margin: 0;

@@ -1,5 +1,7 @@
 .nav-bar {
-    background-color: rgb(30, 30, 30);
+    // background-color: #1e1e1e;
+    background-color: #000000;
+    // background-image: linear-gradient(100deg, #000000 100, #414141 74%);
     height: 50px;
     &__menu {
         display: none;
@@ -11,7 +13,7 @@
         align-items: center;
     }
     &__logo img {
-        width: 100px;
+        width: 80px;
         z-index: 300;
     }
 }
