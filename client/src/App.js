@@ -10,6 +10,7 @@ import information from "./components/pages/Information";
 import database from "./components/pages/Database";
 import staffs from "./components/pages/Staffs";
 import support from "./components/pages/Support";
+import Footer from "./components/Footer";
 
 class App extends React.Component {
   state = {
@@ -49,6 +50,7 @@ class App extends React.Component {
           <Route path="/staffs" component={staffs} />
           <Route path="/support" component={support} />
         </switch>
+        <Footer />
       </Router>
     );
   }

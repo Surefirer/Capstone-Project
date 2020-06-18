@@ -1,0 +1,26 @@
+.footer {
+    height: 200px;
+    background-color: #fafafa;
+    text-align: center;
+    margin: 15px auto 0 auto;
+    line-height: 2rem;
+    P {
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+    }
+    &__social {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        img {
+            height: 30px;
+            margin: 15px;
+        }
+    }
+}
+
+.footer-wrapper {
+    width: 220px;
+    margin: 0 auto;
+    padding-top: 30px;
+}

@@ -33,14 +33,16 @@
         font-family: PermanentMarker-Regular;
         &__title {
             h1 {
+                padding-top: 15px;
+                display: inline-block;
                 position: relative;
                 &:after {
                     content: "";
                     position: absolute;
                     bottom: -5px;
-                    height: 3px;
-                    width: 100px;
-                    left: 35%;
+                    height: 4px;
+                    width: 30%;
+                    left: calc(50% - 15%);
                     background: #c7c719;
                 }
             }
@@ -62,5 +64,89 @@
         background-color: #fafafa;
         cursor: pointer;
         color: black;
+    }
+    .server-intro {
+        height: 390px;
+        background-color: #fafafa;
+        text-align: center;
+        &__title {
+            font-family: TitilliumWeb-Bold;
+            line-height: 2rem;
+            display: inline-block;
+            position: relative;
+            padding-top: 15px;
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: -10px;
+                height: 4px;
+                width: 30%;
+                left: calc(50% - 15%);
+                background: #c7c719;
+            }
+        }
+        &__discription {
+            width: 80%;
+            margin: 20px auto;
+            font-size: 1.1rem;
+        }
+    }
+    .monthly-stat {
+        height: 640px;
+        background-color: #fafafa;
+        text-align: center;
+        margin: 15px 0;
+        &__title {
+            font-family: TitilliumWeb-Bold;
+            display: inline-block;
+            font-size: 1.1rem;
+            line-height: 2rem;
+            position: relative;
+            padding-top: 15px;
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: -10px;
+                height: 4px;
+                width: 30%;
+                left: calc(50% - 15%);
+                background: #c7c719;
+            }
+        }
+        &__card {
+            margin: 30px 0;
+            img {
+                height: 45px;
+            }
+        }
+    }
+    .testimonials {
+        height: 400px;
+        background-color: #fafafa;
+        text-align: center;
+        margin: 15px 0;
+        &__title {
+            font-family: TitilliumWeb-Bold;
+            line-height: 2rem;
+            display: inline-block;
+            position: relative;
+            padding-top: 15px;
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: -10px;
+                height: 4px;
+                width: 30%;
+                left: calc(50% - 15%);
+                background: #c7c719;
+            }
+        }
+        &__card {
+            margin: 30px;
+        }
+        &__disc {
+            width: 220px;
+            margin: 10px auto;
+        }
     }
 }

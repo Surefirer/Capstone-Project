@@ -9,6 +9,13 @@ import commentAltSmile from "../assets/icons/comment-alt-smile.svg";
 import questionSquare from "../assets/icons/question-square.svg";
 import youtube from "../assets/icons/youtube.svg";
 import bilibiliTv from "../assets/icons/bilibili-tv.svg";
+import trophySolid from "../assets/icons/trophy-solid.svg";
+import userSolid from "../assets/icons/user-solid.svg";
+import addressCardSolid from "../assets/icons/address-card-solid.svg";
+import youtubeBlack from "../assets/icons/youtube-black.svg";
+import bilibiliTvBlack from "../assets/icons/bilibili-tv-black.svg";
+import quoteRightSolid from "../assets/icons/quote-right-solid.svg";
+import quoteLeftSolid from "../assets/icons/quote-left-solid.svg";
 
 const Logos = {
   logo: logo,
@@ -25,6 +32,13 @@ const Icons = {
   questionSquare: questionSquare,
   youtube: youtube,
   bilibiliTv: bilibiliTv,
+  trophySolid: trophySolid,
+  userSolid: userSolid,
+  addressCardSolid: addressCardSolid,
+  youtubeBlack: youtubeBlack,
+  bilibiliTvBlack: bilibiliTvBlack,
+  quoteRightSolid: quoteRightSolid,
+  quoteLeftSolid: quoteLeftSolid,
 };
 
 export { Logos };
