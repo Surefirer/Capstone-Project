@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 //import axios from "axios";
 import Home from "./components/pages/Home";
 import Header from "./components/Header";
@@ -42,14 +42,14 @@ class App extends React.Component {
           />
           {backdrop}
         </div>
-        <switch>
+        <Switch>
           <Route path="/" component={Home} exact />
           <Route path="/yypoints" component={yypoints} />
           <Route path="/information" component={information} />
           <Route path="/database" component={database} />
           <Route path="/staffs" component={staffs} />
           <Route path="/support" component={support} />
-        </switch>
+        </Switch>
         <Footer />
       </Router>
     );

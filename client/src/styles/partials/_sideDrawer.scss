@@ -5,10 +5,10 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 70%;
-    max-width: 200px;
+    width: 100%;
+    max-width: 320px;
     z-index: 200;
-    transform: translateX(-110%);
+    transform: translateY(-110%);
     transition: transform 0.3s ease-out;
     &__menu {
         color: $white;
@@ -38,7 +38,7 @@
 }
 
 .open {
-    transform: translateX(0);
+    transform: translateY(0);
 }
 
 .side-drawer li:hover,
