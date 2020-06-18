@@ -121,7 +121,7 @@
         }
     }
     .testimonials {
-        height: 400px;
+        height: 350px;
         background-color: #fafafa;
         text-align: center;
         margin: 15px 0;
@@ -147,6 +147,24 @@
         &__disc {
             width: 220px;
             margin: 10px auto;
+        }
+        &__quote {
+            &:before {
+                content: "";
+                background: url(../assets/icons/quote-left-solid.svg) no-repeat;
+                width: 15px;
+                height: 15px;
+                display: inline-block;
+                margin-right: 5px;
+            }
+            &:after {
+                content: "";
+                background: url(../assets/icons/quote-right-solid.svg) no-repeat;
+                width: 15px;
+                height: 15px;
+                display: inline-block;
+                margin-left: 5px;
+            }
         }
     }
 }

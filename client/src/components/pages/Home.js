@@ -81,11 +81,11 @@ function Home() {
             <h3>Serrow</h3>
           </div>
           <div className="testimonials__disc">
-            <p>
+            <p className="testimonials__quote">
               Server has a good balance between helpful quality of life and
               classic adventuring elements keeping close to the original. I will
               continue to enjoy playing on this incredible server. 10/10 would
-              recommend
+              recommend.
             </p>
           </div>
         </div>
