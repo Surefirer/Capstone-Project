@@ -1,23 +1,11 @@
 import React, { Component } from "react";
-//import { Icons } from "../assets";
 import axios from "axios";
 
 const searchByItemID = (searchKeyword) =>
-  `https://cors-anywhere.herokuapp.com/https://www.divine-pride.net/api/database/item/${searchKeyword}?apiKey=02c7580d618374dbc3f1a593291d5394&server=cro`;
+  `https://cors-anywhere.herokuapp.com/https://www.divine-pride.net/api/database/item/${searchKeyword}?apiKey=02c7580d618374dbc3f1a593291d5394`;
 
 // function Database() {
 class SearchItem extends Component {
-  searchItem = (event) => {
-    event.preventDefault();
-    axios
-      .get(searchByItemID(event.target.searchItemInput.value))
-      .then((response) => {
-        console.log(response);
-        this.setState({ items: response.data });
-      });
-    console.log(event.target.searchItemInput.value);
-  };
-
   state = {
     items: [],
   };
@@ -25,18 +13,39 @@ class SearchItem extends Component {
   componentDidMount() {
     axios
       .get(
-        "https://cors-anywhere.herokuapp.com/https://www.divine-pride.net/api/database/item/501?apiKey=02c7580d618374dbc3f1a593291d5394&server=cRo"
+        "https://cors-anywhere.herokuapp.com/https://www.divine-pride.net/api/database/item/501?apiKey=02c7580d618374dbc3f1a593291d5394"
       )
       .then(
         (response) => {
           console.log(response);
-          this.setState({ items: response.data });
+          this.setState({
+            items: response.data,
+          });
         },
         (error) => {
           console.log(error);
         }
       );
   }
+
+  searchItem = (event) => {
+    event.preventDefault();
+    axios
+      .get(searchByItemID(event.target.searchItemInput.value))
+      .then((response) => {
+        // console.log(response);
+        this.setState({
+          items: response.data,
+        });
+      });
+    event.target.reset();
+  };
+
+  // clearInput = (event) => {
+  //   event.preventDefault();
+  //   form.reset();
+  //   console.log(event.target);
+  // };
 
   render() {
     return (
@@ -55,7 +64,12 @@ class SearchItem extends Component {
               name="searchItemInput"
               placeholder="item id/name"
             />
-            <button type="submit">SEARCH</button>
+            {/* <button onClick={this.clearInput} className="database__clearBtn">
+                <img src={Icons.times} alt="" />
+              </button> */}
+            <button className="database__subBtn" type="submit">
+              SEARCH
+            </button>
           </form>
         </div>
 

@@ -40,13 +40,13 @@
             border-radius: 4px;
             padding-left: 20px;
         }
-        button {
-            height: 25px;
-            width: 80px;
-            border-radius: 4px;
-            background-color: rgb(235, 235, 5);
-            font-family: TitilliumWeb-Bold;
-        }
+    }
+    &__subBtn {
+        height: 25px;
+        width: 80px;
+        border-radius: 4px;
+        background-color: rgb(235, 235, 5);
+        font-family: TitilliumWeb-Bold;
     }
     &__searchResult {
         width: 95%;
@@ -108,5 +108,23 @@
     &__itemdiscriptionContent {
         padding-left: 5px;
         line-height: 1.5rem;
+    }
+    &__clearBtn {
+        width: 30px;
+        height: 25px;
+        position: absolute;
+        right: 5px;
+        background-color: transparent;
+        img {
+            height: 25px;
+        }
+    }
+    &__searchBoxWrapper2 {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        input {
+            width: 100%;
+        }
     }
 }

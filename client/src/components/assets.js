@@ -17,6 +17,7 @@ import bilibiliTvBlack from "../assets/icons/bilibili-tv-black.svg";
 import quoteRightSolid from "../assets/icons/quote-right-solid.svg";
 import quoteLeftSolid from "../assets/icons/quote-left-solid.svg";
 import defultSearchImg from "../assets/images/defult-search-img.bmp";
+import times from "../assets/icons/times.svg";
 
 const Logos = {
   logo: logo,
@@ -41,6 +42,7 @@ const Icons = {
   quoteRightSolid: quoteRightSolid,
   quoteLeftSolid: quoteLeftSolid,
   defultSearchImg: defultSearchImg,
+  times: times,
 };
 
 export { Logos };

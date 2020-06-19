@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-//import { Icons } from "../assets";
 import axios from "axios";
 
 const searchByItemID = (searchKeyword) =>
@@ -19,7 +18,7 @@ class SearchMonster extends Component {
   };
 
   state = {
-    items: [],
+    mobs: [],
   };
 
   componentDidMount() {
@@ -30,7 +29,8 @@ class SearchMonster extends Component {
       .then(
         (response) => {
           console.log(response);
-          this.setState({ items: response.data });
+          console.log(response.data.stats.level);
+          this.setState({ mobs: response.data });
         },
         (error) => {
           console.log(error);
@@ -39,6 +39,12 @@ class SearchMonster extends Component {
   }
 
   render() {
+    if (this.stats.mobs.stats === undefined) {
+      return <p>Loading data...</p>;
+    }
+    //if (data.stats === undefined) {
+    //  return <p>Loading data...</p>;
+    //} // show error 'data' is not defined
     return (
       <div className="database">
         <div className="database__title">
@@ -55,32 +61,16 @@ class SearchMonster extends Component {
               name="searchItemInput"
               placeholder="monster id/name"
             />
-            <button type="submit">SEARCH</button>
+            <button className="database__subBtn" type="submit">
+              SEARCH
+            </button>
           </form>
         </div>
 
-        <div className="database__searchResult">
-          <div className="database__titleWrapper">
-            <p className="database__itemTitle database__id">Id</p>
-            <p className="database__itemTitle database__image">Name</p>
-            <p className="database__itemTitle database__name">HP</p>
-            <p className="database__itemTitle database__type">TypeId</p>
-          </div>
-
-          <div className="database__contentWrapper">
-            <p className="database__content database__id">
-              {this.state.items.id}
-            </p>
-            <div className="database__content database__name">
-              {this.state.items.name}
-            </div>
-            <p className="database__content database__weight">
-              {this.state.items.weight}
-            </p>
-            <p className="database__content database__type">
-              {this.state.items.itemTypeId}
-            </p>
-          </div>
+        <div className="searchMonster-result">
+          <h3>Mob Name: {this.state.mobs.name}</h3>
+          <h3>Mob ID: {this.state.mobs.id}</h3>
+          <h3>Level: {this.state.mobs.stats.level}</h3>
         </div>
       </div>
     );
