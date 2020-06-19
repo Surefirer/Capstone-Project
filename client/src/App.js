@@ -7,10 +7,13 @@ import SideDrawer from "./components/sideDrawer/SideDrawer";
 import BackDrop from "./components/BackDrop";
 import yypoints from "./components/pages/YyPoints";
 import information from "./components/pages/Information";
-import database from "./components/pages/Database";
+// import database from "./components/pages/SearchItem";
 import staffs from "./components/pages/Staffs";
 import support from "./components/pages/Support";
 import Footer from "./components/Footer";
+import searchItem from "./components/pages/SearchItem";
+import searchMonster from "./components/pages/SearchMonster";
+import ItemSummary from "./components/pages/ItemSummary";
 
 class App extends React.Component {
   state = {
@@ -46,7 +49,9 @@ class App extends React.Component {
           <Route path="/" component={Home} exact />
           <Route path="/yypoints" component={yypoints} />
           <Route path="/information" component={information} />
-          <Route path="/database" component={database} />
+          <Route path="/database/item" component={searchItem} />
+          <Route path="/database/item/:id" component={ItemSummary} />
+          <Route path="/database/monster" component={searchMonster} />
           <Route path="/staffs" component={staffs} />
           <Route path="/support" component={support} />
         </Switch>

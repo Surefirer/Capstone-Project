@@ -498,7 +498,7 @@ textarea::placeholder {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 100%;
   color: white;
 }
 
@@ -564,7 +564,7 @@ textarea::placeholder {
 }
 
 .database__searchResult {
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -581,22 +581,37 @@ textarea::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .database__itemTitle {
-  width: 25%;
+  width: 90%;
+  margin: 0 auto;
+  border: 0.05rem solid white;
+  background-color: rgba(0, 0, 0, 0.6);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  font-size: 0.8rem;
+}
+
+.database__id {
+  width: 40%;
+  border-right: 0.05rem solid white;
+  padding-left: 5px;
 }
 
 .database__contentWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.database__itemCont {
+  padding-left: 5px;
 }
 
 .database__content {
@@ -620,5 +635,26 @@ textarea::placeholder {
 
 .database__content:nth-last-child(1) {
   border-right: 0.05rem solid white;
+}
+
+.database__itemDiscription {
+  width: 90%;
+  margin: 50px auto;
+  border: 0.05rem solid white;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0.8rem;
+}
+
+.database__itemdiscriptionTitle {
+  border-right: 0.05rem solid white;
+  line-height: 1.5rem;
+}
+
+.database__itemdiscriptionContent {
+  padding-left: 5px;
+  line-height: 1.5rem;
 }
 /*# sourceMappingURL=main.css.map */

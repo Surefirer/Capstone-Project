@@ -50,14 +50,24 @@ const sideDrawer = (props) => {
             Forum
           </a>
         </li>
-        <Link to="/database">
+        <Link to="/database/item">
           <li>
             <img
               className="side-drawer__svg"
               src={Icons.search}
               alt="questionCircle"
             />
-            Database
+            Search Item
+          </li>
+        </Link>
+        <Link to="/database/monster">
+          <li>
+            <img
+              className="side-drawer__svg"
+              src={Icons.search}
+              alt="questionCircle"
+            />
+            Search Monster
           </li>
         </Link>
         <Link to="/staffs">
