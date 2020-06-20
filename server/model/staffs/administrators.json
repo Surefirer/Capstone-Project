@@ -3,20 +3,20 @@
         "name": "[GM]00",
         "position": "Administrator",
         "headShot": "http://www.yyragnarok.com/images/headshot/gm00_headshot.png",
-        "discription": "After many disappointing experiences as a play, decided to create my own Renewal Ragnarok server. Since I started this project, I quickly fell in love with it, and now actively work towards improving YYRO every day. It makes me so incredibly happy to know that while I may not have gotten to enjoy to Ragnarok Online experience I wish I got, we're able to provide such an experience to our players."
+        "description": "After many disappointing experiences as a play, decided to create my own Renewal Ragnarok server. Since I started this project, I quickly fell in love with it, and now actively work towards improving YYRO every day. It makes me so incredibly happy to know that while I may not have gotten to enjoy to Ragnarok Online experience I wish I got, we're able to provide such an experience to our players."
     },
     {
         "id": "admin1",
         "name": "[GM]YY",
         "position": "Administrator",
         "headShot": "http://www.yyragnarok.com/images/headshot/headshot02.png",
-        "discription": "Hello, friends. I joined YYRO since its launch. I rolled with it and like it. I never imagined that the little project with no more than a handful of players would one day make it this far. Today, my tasks are some of the most varied among staff and if I had to describe what I do, I would say I dabble in everything. This server means a lot to me and I want to continue to see it succeed."
+        "description": "Hello, friends. I joined YYRO since its launch. I rolled with it and like it. I never imagined that the little project with no more than a handful of players would one day make it this far. Today, my tasks are some of the most varied among staff and if I had to describe what I do, I would say I dabble in everything. This server means a lot to me and I want to continue to see it succeed."
     },
     {
         "id": "admin2",
         "name": "[GM]Wonderful",
         "position": "Administrator",
         "headShot": "http://www.yyragnarok.com/images/headshot/headshot01.png",
-        "discription": "Greetings from Wonderful! I was accepted into the team as a helper, doing small craft projects for the forums. Such endeavours continue to be a big passion of mine, although today I also assist with anything that falls between support tickets and hat descriptions. Working alongside the many incredibly talented and ambitious people continue to be a great source of inspiration to me but more than anything, I want to pass on the joy of playing this game."
+        "description": "Greetings from Wonderful! I was accepted into the team as a helper, doing small craft projects for the forums. Such endeavours continue to be a big passion of mine, although today I also assist with anything that falls between support tickets and hat descriptions. Working alongside the many incredibly talented and ambitious people continue to be a great source of inspiration to me but more than anything, I want to pass on the joy of playing this game."
     }
 ]

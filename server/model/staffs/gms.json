@@ -2,35 +2,35 @@
         "id": "gm0",
         "name": "[GM]Arbor",
         "position": "Game Master",
-        "headShot": "",
-        "discription": "Hello my friends. The name is Arbor. I make tree references to compensate for my dry sense of humor. Any laughter is appreciated; any memes are welcomed. My main tasks on the team have been answering support tickets and in-game reports. Hit me up on discord or catch me in game if you have any questions about anything, and I will give my best shot."
+        "headShot": "http://www.yyragnarok.com/images/headshot/noheadshot.png",
+        "description": "Hello my friends. The name is Arbor. I make tree references to compensate for my dry sense of humor. Any laughter is appreciated; any memes are welcomed. My main tasks on the team have been answering support tickets and in-game reports. Hit me up on discord or catch me in game if you have any questions about anything, and I will give my best shot."
     },
     {
         "id": "gm1",
         "name": "[GM]Chasm",
         "position": "Game Master",
-        "headShot": "",
-        "discription": "Heya! I'm Chasm, at your service. I started as a regular player just like you now, and later on had a chance to be part of a wonderful team that manages the server and helping out the community. I enjoy having friendly chats, so don't be shy to say \"Hi\" to me or ask me for support. Events are also the thing I love doing when I'm available. I give free pats on the head for everyone to enjoy!"
+        "headShot": "http://www.yyragnarok.com/images/headshot/noheadshot.png",
+        "description": "Heya! I'm Chasm, at your service. I started as a regular player just like you now, and later on had a chance to be part of a wonderful team that manages the server and helping out the community. I enjoy having friendly chats, so don't be shy to say \"Hi\" to me or ask me for support. Events are also the thing I love doing when I'm available. I give free pats on the head for everyone to enjoy!"
     },
     {
         "id": "gm3",
         "name": "[GM]Lumitas",
         "position": "Game Master",
-        "headShot": "",
-        "discription": "Hallo! I'm Lumitas, but feel free to call me Lumi. You will probably see me a lot in all towns making sure that everybody is well and happy as supporting players isn't only about answering game related questions and tickets! So if you want to talk or need anything, just approach me and I'll do what I can to support you."
+        "headShot": "http://www.yyragnarok.com/images/headshot/noheadshot.png",
+        "description": "Hallo! I'm Lumitas, but feel free to call me Lumi. You will probably see me a lot in all towns making sure that everybody is well and happy as supporting players isn't only about answering game related questions and tickets! So if you want to talk or need anything, just approach me and I'll do what I can to support you."
     },
     {
         "id": "gm3",
         "name": "[GM]Wonderful",
         "position": "Administrator",
-        "headShot": "",
-        "discription": "Greetings from Wonderful! I was accepted into the team as a helper, doing small craft projects for the forums. Such endeavours continue to be a big passion of mine, although today I also assist with anything that falls between support tickets and hat descriptions. Working alongside the many incredibly talented and ambitious people continue to be a great source of inspiration to me but more than anything, I want to pass on the joy of playing this game."
+        "headShot": "http://www.yyragnarok.com/images/headshot/noheadshot.png",
+        "description": "Greetings from Wonderful! I was accepted into the team as a helper, doing small craft projects for the forums. Such endeavours continue to be a big passion of mine, although today I also assist with anything that falls between support tickets and hat descriptions. Working alongside the many incredibly talented and ambitious people continue to be a great source of inspiration to me but more than anything, I want to pass on the joy of playing this game."
     },
     {
         "id": "gm4",
         "name": "[GM]Svarog",
         "position": "Game Master",
-        "headShot": "",
-        "discription": "Hey! I'm Svarog, and I'm usually cooling off some heated argument in #portuguese! I'm a RO player since there were only 1st classes, and I intend to uphold the peace and harmony that once ruled over the adventurers of Rune-Midgard! Don't hesitate to PM me if you ever need a hand!"
+        "headShot": "http://www.yyragnarok.com/images/headshot/noheadshot.png",
+        "description": "Hey! I'm Svarog, and I'm usually cooling off some heated argument in #portuguese! I'm a RO player since there were only 1st classes, and I intend to uphold the peace and harmony that once ruled over the adventurers of Rune-Midgard! Don't hesitate to PM me if you ever need a hand!"
     }
 ]

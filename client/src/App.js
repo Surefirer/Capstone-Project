@@ -20,12 +20,24 @@ class App extends React.Component {
   state = {
     sideDrawerOpen: false,
     adminList: [],
+    devList: [],
+    GMList: [],
   };
 
   componentDidMount() {
-    axios.get("http://localhost:5000/administrator").then((response) => {
+    axios.get("/administrator").then((response) => {
       this.setState({
         adminList: response.data,
+      });
+    });
+    axios.get("/developer").then((response) => {
+      this.setState({
+        devList: response.data,
+      });
+    });
+    axios.get("/gameMaster").then((response) => {
+      this.setState({
+        GMList: response.data,
       });
     });
   }
@@ -41,7 +53,7 @@ class App extends React.Component {
   };
 
   render() {
-    const { adminList } = this.state;
+    const { adminList, devList, GMList } = this.state;
     let backdrop;
     if (this.state.sideDrawerOpen) {
       backdrop = <BackDrop click={this.backdropClickHandler} />;
@@ -66,7 +78,9 @@ class App extends React.Component {
           <Route path="/database/monster/:id" component={MonsterSummary} />
           <Route
             path="/staffs"
-            render={(props) => <Staffs adminList={adminList} />}
+            render={(props) => (
+              <Staffs adminList={adminList} devList={devList} GMList={GMList} />
+            )}
           />
           <Route path="/support" component={support} />
         </Switch>

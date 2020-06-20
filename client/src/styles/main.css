@@ -249,17 +249,6 @@ textarea::placeholder {
   color: #fa923f;
 }
 
-.adminCard-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 100%;
-  max-width: 1080px;
-  margin: 0 auto;
-}
-
 .backdrop {
   position: fixed;
   width: 100%;
@@ -742,7 +731,7 @@ caption {
 .staffs-admin__admCard {
   width: 256px;
   text-align: center;
-  margin: 50px auto;
+  margin: 50px 50px;
 }
 
 .staffs-admin__admCard img {
@@ -761,5 +750,16 @@ caption {
   text-align: left;
   line-height: 1.3rem;
   margin-top: 10px;
+}
+
+.adminCard-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=main.css.map */

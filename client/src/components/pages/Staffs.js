@@ -52,7 +52,7 @@ function Staffs(props) {
                   <h4 className="staffs-admin__titleSub">{admin.position}</h4>
                 </div>
                 <div className="staffs-admin__admIntro">
-                  <p>{admin.discription}</p>
+                  <p>{admin.description}</p>
                 </div>
               </div>
             ))}
@@ -75,21 +75,19 @@ function Staffs(props) {
               their work with the game files is done from the background.
             </p>
           </div>
-          <div className="staffs-admin__admCard">
-            <img src={Logos.gm00} alt="" />
-            <div className="staffs-admin__title">
-              <h3>[GM]00</h3>
-              <h4 className="staffs-admin__titleSub">Lead Developer</h4>
-            </div>
-            <div className="staffs-admin__admIntro">
-              <p>
-                Hi! I am a developer in charge of all heavy-duty coding. When
-                I'm not microwaving tea of taking care of my two little kids, I
-                verify and fix bugs, and test and port content from twRo and
-                kRo. When I can, I also spend time in-game, where I like to help
-                players.
-              </p>
-            </div>
+          <div className="adminCard-wrapper">
+            {props.devList.map((dev) => (
+              <div className="staffs-admin__admCard">
+                <img src={dev.headShot} alt="" />
+                <div className="staffs-admin__title">
+                  <h3>{dev.name}</h3>
+                  <h4 className="staffs-admin__titleSub">{dev.position}</h4>
+                </div>
+                <div className="staffs-admin__admIntro">
+                  <p>{dev.description}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
@@ -112,21 +110,19 @@ function Staffs(props) {
               help in the development process by testing new features and bugs.
             </p>
           </div>
-          <div className="staffs-admin__admCard">
-            <img src={Logos.yyrologohuicir} alt="" />
-            <div className="staffs-admin__title">
-              <h3>[GM]YY</h3>
-              <h4 className="staffs-admin__titleSub">Head Game Master</h4>
-            </div>
-            <div className="staffs-admin__admIntro">
-              <p>
-                Greetings friends! I've been playing RO for a long time and it
-                still is one of my favorite games. I will try my best to help
-                everyone who needs help, and making sure everything continue to
-                run like a well-oiled machine. So don't be shy, feel free to ask
-                me anything or just to day hi!
-              </p>
-            </div>
+          <div className="adminCard-wrapper">
+            {props.GMList.map((gm) => (
+              <div className="staffs-admin__admCard">
+                <img src={gm.headShot} alt="" />
+                <div className="staffs-admin__title">
+                  <h3>{gm.name}</h3>
+                  <h4 className="staffs-admin__titleSub">{gm.position}</h4>
+                </div>
+                <div className="staffs-admin__admIntro">
+                  <p>{gm.description}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

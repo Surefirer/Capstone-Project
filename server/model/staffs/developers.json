@@ -1,23 +1,23 @@
 [{
         "id": "dev0",
         "name": "[GM]00",
-        "position": "Administrator",
-        "headShot": "",
-        "discription": "After many disappointing experiences as a play, decided to create my own Renewal Ragnarok server. Since I started this project, I quickly fell in love with it, and now actively work towards improving YYRO every day. It makes me so incredibly happy to know that while I may not have gotten to enjoy to Ragnarok Online experience I wish I got, we're able to provide such an experience to our players."
+        "position": "Lead Developer",
+        "headShot": "http://www.yyragnarok.com/images/headshot/gm00_headshot.png",
+        "description": "Hi! I am a developer in charge of all heavy-duty coding. When I'm not microwaving tea of taking care of my two little kids, I verify and fix bugs, and test and port content from twRo and kRo. When I can, I also spend time in-game, where I like to help players."
     },
     {
         "id": "dev1",
-        "name": "[GM]YY",
-        "position": "Lead Developer",
-        "headShot": "",
-        "discription": "Hi! I am a developer in charge of all heavy-duty coding. When I'm not microwaving tea of taking care of my two little kids, I verify and fix bugs, and test and port content from twRo and kRo. When I can, I also spend time in-game, where I like to help players."
+        "name": "Haollee",
+        "position": "Developer",
+        "headShot": "http://www.yyragnarok.com/images/headshot/headshot03.png",
+        "description": "Your Ragnarok Online enthusiast, phaicm here. I'm in love with this ancient game and I love to improve your user experience. My goal is to add upon this almost two decade old client into a work of art. With its primitive technology, dissecting and modifying RO is one of my favorite hobbies. I'm enjoying everyone's feedback and suggestions so please keep them coming! Have fun on YYRO."
     },
     {
         "id": "dev2",
-        "name": "[GM]Mily",
-        "position": "Develop",
-        "headShot": "",
-        "discription": "Hi, it’s Rumble! I’m a content developer who learned to code years ago because of RO, back when instanced dungeons were just arriving. Helped porting the 3rd job classes as they were being released on kRO and recently came out of a RO hiatus. Now, I’m focused on developing new game modes and I’m excited to bringing these ideas to life!"
+        "name": "Mily",
+        "position": "Developer",
+        "headShot": "http://www.yyragnarok.com/images/headshot/headshot04.png",
+        "description": "Hi, it’s Mily! I’m a content developer who learned to code years ago because of RO, back when instanced dungeons were just arriving. Helped porting the 3rd job classes as they were being released on kRO and recently came out of a RO hiatus. Now, I’m focused on developing new game modes and I’m excited to bringing these ideas to life!"
     }
 
 ]
