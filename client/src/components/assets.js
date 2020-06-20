@@ -21,9 +21,18 @@ import times from "../assets/icons/times.svg";
 import timesRed from "../assets/icons/times-red.svg";
 import checkGreen from "../assets/icons/check-green.svg";
 import chevronDoubleLeft from "../assets/icons/chevron-double-left.svg";
+import starSolid from "../assets/icons/star-solid.svg";
+import yyrologohuicir from "../assets/logos/yyrologohuicir.png";
+import gm00 from "../assets/logos/gm00.png";
+import codeSolid from "../assets/icons/code-solid.svg";
+import dragon from "../assets/icons/dragon.svg";
+import code from "../assets/icons/code.svg";
+import userVisor from "../assets/icons/user-visor.svg";
 
 const Logos = {
   logo: logo,
+  yyrologohuicir: yyrologohuicir,
+  gm00: gm00,
 };
 
 const Icons = {
@@ -49,6 +58,11 @@ const Icons = {
   timesRed: timesRed,
   checkGreen: checkGreen,
   chevronDoubleLeft: chevronDoubleLeft,
+  starSolid: starSolid,
+  codeSolid: codeSolid,
+  dragon: dragon,
+  code: code,
+  userVisor: userVisor,
 };
 
 export { Logos };

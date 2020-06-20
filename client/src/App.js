@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-//import axios from "axios";
+import axios from "axios";
 import Home from "./components/pages/Home";
 import Header from "./components/Header";
 import SideDrawer from "./components/sideDrawer/SideDrawer";
@@ -8,7 +8,7 @@ import BackDrop from "./components/BackDrop";
 import yypoints from "./components/pages/YyPoints";
 import information from "./components/pages/Information";
 // import database from "./components/pages/SearchItem";
-import staffs from "./components/pages/Staffs";
+import Staffs from "./components/pages/Staffs";
 import support from "./components/pages/Support";
 import Footer from "./components/Footer";
 import searchItem from "./components/pages/SearchItem";
@@ -19,7 +19,16 @@ import MonsterSummary from "./components/pages/MonsterSummary";
 class App extends React.Component {
   state = {
     sideDrawerOpen: false,
+    adminList: [],
   };
+
+  componentDidMount() {
+    axios.get("http://localhost:5000/administrator").then((response) => {
+      this.setState({
+        adminList: response.data,
+      });
+    });
+  }
 
   drawerToggleClickHandler = () => {
     this.setState((prevState) => {
@@ -32,6 +41,7 @@ class App extends React.Component {
   };
 
   render() {
+    const { adminList } = this.state;
     let backdrop;
     if (this.state.sideDrawerOpen) {
       backdrop = <BackDrop click={this.backdropClickHandler} />;
@@ -54,7 +64,10 @@ class App extends React.Component {
           <Route path="/database/item/:id" component={ItemSummary} />
           <Route path="/database/monster" exact component={searchMonster} />
           <Route path="/database/monster/:id" component={MonsterSummary} />
-          <Route path="/staffs" component={staffs} />
+          <Route
+            path="/staffs"
+            render={(props) => <Staffs adminList={adminList} />}
+          />
           <Route path="/support" component={support} />
         </Switch>
         <Footer />

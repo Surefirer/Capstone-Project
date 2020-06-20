@@ -249,6 +249,17 @@ textarea::placeholder {
   color: #fa923f;
 }
 
+.adminCard-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
 .backdrop {
   position: fixed;
   width: 100%;
@@ -638,5 +649,117 @@ td {
 caption {
   font-family: TitilliumWeb-Bold;
   font-size: 1rem;
+}
+
+.staffs {
+  background-image: url(../assets/images/bio_3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  min-height: 100vh;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  color: #ffffff;
+}
+
+.staffs__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.staffs__logo img {
+  width: 200px;
+}
+
+.staffs__title {
+  padding-top: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.staffs__title h1 {
+  display: inline-block;
+  position: relative;
+}
+
+.staffs__title h1:after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height: 3px;
+  width: 80%;
+  left: calc(50% - 40%);
+  background: #c7c719;
+}
+
+.staffs__titleCont {
+  width: 80%;
+  max-width: 1080px;
+  margin: 25px auto;
+  line-height: 1.2rem;
+}
+
+.staffs__titleCont p {
+  line-height: 1.3rem;
+}
+
+.staffs-admin__titleWrapper {
+  text-align: center;
+}
+
+.staffs-admin__titleWrapper img {
+  width: 25px;
+  margin-right: 10px;
+}
+
+.staffs-admin__titleWrapper h2 {
+  display: inline-block;
+  position: relative;
+}
+
+.staffs-admin__titleWrapper h2:after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height: 3px;
+  width: 90%;
+  left: calc(50% - 45%);
+  background: #c7c719;
+}
+
+.staffs-admin__titleCont {
+  width: 80%;
+  max-width: 1080px;
+  margin: 25px auto;
+  line-height: 1.3rem;
+}
+
+.staffs-admin__admCard {
+  width: 256px;
+  text-align: center;
+  margin: 50px auto;
+}
+
+.staffs-admin__admCard img {
+  width: 180px;
+}
+
+.staffs-admin__title {
+  margin-top: 15px;
+}
+
+.staffs-admin__titleSub {
+  color: #e0e000;
+}
+
+.staffs-admin__admIntro {
+  text-align: left;
+  line-height: 1.3rem;
+  margin-top: 10px;
 }
 /*# sourceMappingURL=main.css.map */

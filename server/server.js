@@ -2,12 +2,19 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 
+const getAdministratorList = require("./controller/getAdministratorList");
+
 // Middleware
 app.use(express.json());
 app.use(cors());
 
 app.get("/", (req, res) => {
   res.send("Home Page");
+});
+
+// api info endpoint for admin
+app.get("/administrator", (req, res) => {
+  res.json(getAdministratorList());
 });
 
 const PORT = process.env.PORT || 5000;

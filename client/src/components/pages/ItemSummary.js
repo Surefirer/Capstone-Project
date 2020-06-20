@@ -12,7 +12,7 @@ class ItemSummary extends Component {
     const id = this.props.match.params.id;
     axios
       .get(
-        `https://cors-anywhere.herokuapp.com/https://www.divine-pride.net/api/database/item/${id}?apiKey=02c7580d618374dbc3f1a593291d5394&server=cRO`
+        `https://cors-anywhere.herokuapp.com/https://www.divine-pride.net/api/database/item/${id}?apiKey=02c7580d618374dbc3f1a593291d5394`
       )
       .then(
         (response) => {
