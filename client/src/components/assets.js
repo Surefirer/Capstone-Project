@@ -18,6 +18,9 @@ import quoteRightSolid from "../assets/icons/quote-right-solid.svg";
 import quoteLeftSolid from "../assets/icons/quote-left-solid.svg";
 import defultSearchImg from "../assets/images/defult-search-img.bmp";
 import times from "../assets/icons/times.svg";
+import timesRed from "../assets/icons/times-red.svg";
+import checkGreen from "../assets/icons/check-green.svg";
+import chevronDoubleLeft from "../assets/icons/chevron-double-left.svg";
 
 const Logos = {
   logo: logo,
@@ -43,6 +46,9 @@ const Icons = {
   quoteLeftSolid: quoteLeftSolid,
   defultSearchImg: defultSearchImg,
   times: times,
+  timesRed: timesRed,
+  checkGreen: checkGreen,
+  chevronDoubleLeft: chevronDoubleLeft,
 };
 
 export { Logos };

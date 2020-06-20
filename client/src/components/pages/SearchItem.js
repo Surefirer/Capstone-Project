@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const searchByItemID = (searchKeyword) =>
-  `https://cors-anywhere.herokuapp.com/https://www.divine-pride.net/api/database/item/${searchKeyword}?apiKey=02c7580d618374dbc3f1a593291d5394`;
+  `https://cors-anywhere.herokuapp.com/https://www.divine-pride.net/api/database/item/${searchKeyword}?apiKey=02c7580d618374dbc3f1a593291d5394&server=cRO`;
 
 // function Database() {
 class SearchItem extends Component {
@@ -13,7 +14,7 @@ class SearchItem extends Component {
   componentDidMount() {
     axios
       .get(
-        "https://cors-anywhere.herokuapp.com/https://www.divine-pride.net/api/database/item/501?apiKey=02c7580d618374dbc3f1a593291d5394"
+        "https://cors-anywhere.herokuapp.com/https://www.divine-pride.net/api/database/item/501?apiKey=02c7580d618374dbc3f1a593291d5394&server=cRO"
       )
       .then(
         (response) => {
@@ -37,21 +38,16 @@ class SearchItem extends Component {
         this.setState({
           items: response.data,
         });
-      });
+      })
+      .catch((err) => console.log("err"));
     event.target.reset();
   };
-
-  // clearInput = (event) => {
-  //   event.preventDefault();
-  //   form.reset();
-  //   console.log(event.target);
-  // };
 
   render() {
     return (
       <div className="database">
         <div className="database__title">
-          <h1>Search Item</h1>
+          <h1>物品查询</h1>
         </div>
 
         <div className="database__searchBox">
@@ -59,52 +55,34 @@ class SearchItem extends Component {
             onSubmit={this.searchItem}
             className="database__searchBoxWrapper"
           >
-            <input
-              type="text"
-              name="searchItemInput"
-              placeholder="item id/name"
-            />
-            {/* <button onClick={this.clearInput} className="database__clearBtn">
-                <img src={Icons.times} alt="" />
-              </button> */}
+            <input type="text" name="searchItemInput" placeholder="物品ID" />
             <button className="database__subBtn" type="submit">
-              SEARCH
+              搜寻
             </button>
           </form>
         </div>
 
-        <div className="database__searchResult">
-          <div className="database__titleWrapper">
-            <div className="database__itemTitle">
-              <p className="database__id">Id</p>
-              <p className="database__itemCont">{this.state.items.id}</p>
-            </div>
-            <div className="database__itemTitle database__image">
-              <p className="database__id">Name</p>
-              <p className="database__itemCont">{this.state.items.name} </p>
-            </div>
-            <div className="database__itemTitle database__name">
-              <p className="database__id">NPC Sell Price</p>
-              <p className="database__itemCont"> {this.state.items.weight}</p>
-            </div>
-            <div className="database__itemTitle database__type">
-              <p className="database__id">TypeId</p>
-              <p className="database__itemCont">
-                {" "}
-                {this.state.items.itemTypeId}
-              </p>
-            </div>
-          </div>
+        <div className="searchItem-result">
+          <table>
+            <thead>
+              <tr>
+                <th>Id</th>
+                <th>名称</th>
+              </tr>
+            </thead>
 
-          <div className="database__itemDiscription">
-            <div className="database__itemdiscriptionTitle">
-              <p>Item Description</p>
-            </div>
-            <div className="database__itemdiscriptionContent">
-              <p>{this.state.items.description}</p>
-              <p>Weight: {this.state.items.weight}</p>
-            </div>
-          </div>
+            <tbody>
+              <tr>
+                <td>
+                  {" "}
+                  <Link to={`/database/item/${this.state.items.id}`}>
+                    {this.state.items.id}
+                  </Link>
+                </td>
+                <td>{this.state.items.name}</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     );

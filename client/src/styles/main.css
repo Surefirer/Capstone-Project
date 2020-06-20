@@ -499,12 +499,15 @@ textarea::placeholder {
   background-size: cover;
   background-position: center;
   height: 100%;
+  min-height: 100vh;
   color: white;
+  padding-bottom: 30px;
 }
 
 .database__title {
   padding-top: 80px;
   text-align: center;
+  position: relative;
 }
 
 .database__title h1 {
@@ -520,6 +523,13 @@ textarea::placeholder {
   width: 80%;
   left: calc(50% - 40%);
   background: #c7c719;
+}
+
+.database__title img {
+  width: 20px;
+  position: absolute;
+  left: 25px;
+  bottom: 10px;
 }
 
 .database__searchBox {
@@ -598,89 +608,35 @@ textarea::placeholder {
   font-size: 0.8rem;
 }
 
-.database__id {
-  width: 40%;
-  border-right: 0.05rem solid white;
-  padding-left: 5px;
+.searchMonster-result__property {
+  border-radius: 4px;
 }
 
-.database__contentWrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.database__itemCont {
-  padding-left: 5px;
-}
-
-.database__content {
-  width: 25%;
-  height: 30px;
-  font-size: 0.7rem;
-  margin: 5px 0;
-  border: 0.05rem solid white;
-  border-right: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: rgba(76, 58, 58, 0.5);
-}
-
-.database__content:nth-last-child(1) {
-  border-right: 0.05rem solid white;
-}
-
-.database__itemDiscription {
+table {
   width: 90%;
-  margin: 50px auto;
+  max-width: 500px;
+  margin: 15px auto 0 auto;
+  background-color: rgba(93, 93, 93, 0.5);
+}
+
+table,
+td,
+th {
   border: 0.05rem solid white;
-  background-color: rgba(0, 0, 0, 0.6);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  border-collapse: collapse;
   font-size: 0.8rem;
 }
 
-.database__itemdiscriptionTitle {
-  border-right: 0.05rem solid white;
-  line-height: 1.5rem;
+th {
+  text-align: center;
 }
 
-.database__itemdiscriptionContent {
-  padding-left: 5px;
-  line-height: 1.5rem;
+td {
+  padding: 2px 10px;
 }
 
-.database__clearBtn {
-  width: 30px;
-  height: 25px;
-  position: absolute;
-  right: 5px;
-  background-color: transparent;
-}
-
-.database__clearBtn img {
-  height: 25px;
-}
-
-.database__searchBoxWrapper2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
-}
-
-.database__searchBoxWrapper2 input {
-  width: 100%;
+caption {
+  font-family: TitilliumWeb-Bold;
+  font-size: 1rem;
 }
 /*# sourceMappingURL=main.css.map */

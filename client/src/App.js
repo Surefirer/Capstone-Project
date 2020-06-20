@@ -49,8 +49,8 @@ class App extends React.Component {
           <Route path="/" component={Home} exact />
           <Route path="/yypoints" component={yypoints} />
           <Route path="/information" component={information} />
-          <Route path="/database/item" component={searchItem} />
-          <Route path="/database/item/:id" component={ItemSummary} />
+          <Route path="/database/item" exact component={searchItem} />
+          <Route path="/database/item/:id" component={ItemSummary} exact />
           <Route path="/database/monster" component={searchMonster} />
           <Route path="/staffs" component={staffs} />
           <Route path="/support" component={support} />
