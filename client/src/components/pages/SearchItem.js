@@ -3,7 +3,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 
 const searchByItemID = (searchKeyword) =>
-  `https://cors-anywhere.herokuapp.com/https://www.divine-pride.net/api/database/item/${searchKeyword}?apiKey=02c7580d618374dbc3f1a593291d5394&server=cRO`;
+  `https://cors-anywhere.herokuapp.com/https://www.divine-pride.net/api/database/item/${searchKeyword}?apiKey=02c7580d618374dbc3f1a593291d5394`;
 
 // function Database() {
 class SearchItem extends Component {
@@ -14,7 +14,7 @@ class SearchItem extends Component {
   componentDidMount() {
     axios
       .get(
-        "https://cors-anywhere.herokuapp.com/https://www.divine-pride.net/api/database/item/501?apiKey=02c7580d618374dbc3f1a593291d5394&server=cRO"
+        "https://cors-anywhere.herokuapp.com/https://www.divine-pride.net/api/database/item/501?apiKey=02c7580d618374dbc3f1a593291d5394"
       )
       .then(
         (response) => {
@@ -47,7 +47,7 @@ class SearchItem extends Component {
     return (
       <div className="database">
         <div className="database__title">
-          <h1>物品查询</h1>
+          <h1>Search Item</h1>
         </div>
 
         <div className="database__searchBox">
@@ -55,9 +55,9 @@ class SearchItem extends Component {
             onSubmit={this.searchItem}
             className="database__searchBoxWrapper"
           >
-            <input type="text" name="searchItemInput" placeholder="物品ID" />
+            <input type="text" name="searchItemInput" placeholder="item id" />
             <button className="database__subBtn" type="submit">
-              搜寻
+              SEARCH
             </button>
           </form>
         </div>
@@ -67,7 +67,7 @@ class SearchItem extends Component {
             <thead>
               <tr>
                 <th>Id</th>
-                <th>名称</th>
+                <th>Name</th>
               </tr>
             </thead>
 

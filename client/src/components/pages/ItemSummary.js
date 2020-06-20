@@ -37,7 +37,7 @@ class ItemSummary extends Component {
           <Link to={`/database/item`}>
             <img src={Icons.chevronDoubleLeft} alt="" />
           </Link>
-          <h1>物品信息</h1>
+          <h1>Search Result</h1>
         </div>
 
         <div className="searchItem-result">
@@ -49,27 +49,27 @@ class ItemSummary extends Component {
               </tr>
 
               <tr>
-                <td>名称</td>
+                <td>Name</td>
                 <td>{this.state.items.name}</td>
               </tr>
               <tr>
-                <td>NPC 售价</td>
+                <td>NPC Sell Price</td>
                 <td>{this.state.items.weight}</td>
               </tr>
               <tr>
-                <td>类别</td>
+                <td>Type</td>
                 <td>{this.state.items.itemTypeId}</td>
               </tr>
               <tr>
-                <td>重量</td>
+                <td>Weight</td>
                 <td> {this.state.items.weight}</td>
               </tr>
               <tr>
-                <td>可破坏</td>
+                <td>Indestructible</td>
                 <td> {this.state.items.indestructible}</td>
               </tr>
               <tr>
-                <td>位置</td>
+                <td>Location</td>
                 <td> {this.state.items.location}</td>
               </tr>
               <tr>
@@ -81,33 +81,33 @@ class ItemSummary extends Component {
                 <td> {this.state.items.matk}</td>
               </tr>
               <tr>
-                <td>可精炼</td>
+                <td>Refinable</td>
                 <td> {this.state.items.refinable}</td>
               </tr>
               <tr>
-                <td>装备等级要求</td>
+                <td>Required Level</td>
                 <td> {this.state.items.requiredLevel}</td>
               </tr>
               <tr>
-                <td>洞</td>
+                <td>Slots</td>
                 <td> {this.state.items.slots}</td>
               </tr>
               <tr>
-                <td>武器等级</td>
+                <td>Weapon Level</td>
                 <td> {this.state.items.weaponLevel}</td>
               </tr>
               <tr>
-                <td>属性</td>
+                <td>Attribute</td>
                 <td> {this.state.items.attribute}</td>
               </tr>
             </tbody>
           </table>
 
           <table className="searchItem-result__itemMoveinfo">
-            <caption>物品 移动 信息</caption>
+            <caption>Item Move Info</caption>
             <tbody>
               <tr>
-                <td>可以丢弃</td>
+                <td>Can be dropped by player</td>
                 {this.state.items.itemMoveInfo.drop === true ? (
                   <td>
                     <img src={Icons.checkGreen} alt="" />
@@ -120,7 +120,7 @@ class ItemSummary extends Component {
                 )}
               </tr>
               <tr>
-                <td>可以交易</td>
+                <td>Can be traded to another player</td>
                 {this.state.items.itemMoveInfo.trade === true ? (
                   <td>
                     <img src={Icons.checkGreen} alt="" />
@@ -133,7 +133,7 @@ class ItemSummary extends Component {
                 )}
               </tr>
               <tr>
-                <td>可以存仓库</td>
+                <td>Can be placed in storage</td>
                 {this.state.items.itemMoveInfo.store === true ? (
                   <td>
                     <img src={Icons.checkGreen} alt="" />
@@ -146,7 +146,7 @@ class ItemSummary extends Component {
                 )}
               </tr>
               <tr>
-                <td>可以存入手推车</td>
+                <td>Can be placed in cart</td>
                 {this.state.items.itemMoveInfo.cart === true ? (
                   <td>
                     <img src={Icons.checkGreen} alt="" />
@@ -159,7 +159,7 @@ class ItemSummary extends Component {
                 )}
               </tr>
               <tr>
-                <td>可以卖NPC</td>
+                <td>Can be sold to NPC</td>
                 {this.state.items.itemMoveInfo.sell === true ? (
                   <td>
                     <img src={Icons.checkGreen} alt="" />
@@ -172,7 +172,7 @@ class ItemSummary extends Component {
                 )}
               </tr>
               <tr>
-                <td>可以邮寄</td>
+                <td>Can be send via mail</td>
                 {this.state.items.itemMoveInfo.mail === true ? (
                   <td>
                     <img src={Icons.checkGreen} alt="" />
@@ -185,7 +185,7 @@ class ItemSummary extends Component {
                 )}
               </tr>
               <tr>
-                <td>可以拍卖</td>
+                <td>Can be sold as an auction</td>
                 {this.state.items.itemMoveInfo.auction === true ? (
                   <td>
                     <img src={Icons.checkGreen} alt="" />
@@ -198,7 +198,7 @@ class ItemSummary extends Component {
                 )}
               </tr>
               <tr>
-                <td>可以存入工会仓库</td>
+                <td>Can be placed in guild storage</td>
                 {this.state.items.itemMoveInfo.guildStore === true ? (
                   <td>
                     <img src={Icons.checkGreen} alt="" />
@@ -214,7 +214,7 @@ class ItemSummary extends Component {
           </table>
 
           <table className="searchItem-result__itemDiscription">
-            <caption>物品描述</caption>
+            <caption>Item Discription</caption>
             <tbody>
               <tr>
                 <td>{this.state.items.description}</td>
@@ -223,12 +223,12 @@ class ItemSummary extends Component {
           </table>
 
           <table className="searchItem-result_obtainFrom">
-            <caption>其他获得方式</caption>
+            <caption>Obtainable From</caption>
             <thead>
               <tr>
-                <th>名称</th>
+                <th>Name</th>
                 <th>ID</th>
-                <th>几率</th>
+                <th>Chance</th>
               </tr>
             </thead>
 
@@ -258,12 +258,12 @@ class ItemSummary extends Component {
           </table>
 
           <table className="searchItem-result_soldBy">
-            <caption>商店销售点</caption>
+            <caption>Buyable At</caption>
             <thead>
               <tr>
                 <th>NPC ID</th>
-                <th>地图名称</th>
-                <th>位置</th>
+                <th>Map Name</th>
+                <th>Position</th>
               </tr>
             </thead>
 

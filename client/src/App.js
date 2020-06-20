@@ -14,6 +14,7 @@ import Footer from "./components/Footer";
 import searchItem from "./components/pages/SearchItem";
 import searchMonster from "./components/pages/SearchMonster";
 import ItemSummary from "./components/pages/ItemSummary";
+import MonsterSummary from "./components/pages/MonsterSummary";
 
 class App extends React.Component {
   state = {
@@ -50,8 +51,9 @@ class App extends React.Component {
           <Route path="/yypoints" component={yypoints} />
           <Route path="/information" component={information} />
           <Route path="/database/item" exact component={searchItem} />
-          <Route path="/database/item/:id" component={ItemSummary} exact />
-          <Route path="/database/monster" component={searchMonster} />
+          <Route path="/database/item/:id" component={ItemSummary} />
+          <Route path="/database/monster" exact component={searchMonster} />
+          <Route path="/database/monster/:id" component={MonsterSummary} />
           <Route path="/staffs" component={staffs} />
           <Route path="/support" component={support} />
         </Switch>
