@@ -15,6 +15,7 @@ import searchItem from "./components/pages/SearchItem";
 import searchMonster from "./components/pages/SearchMonster";
 import ItemSummary from "./components/pages/ItemSummary";
 import MonsterSummary from "./components/pages/MonsterSummary";
+import ScroolToTop from "./components/scrollToTop/scrollToTop";
 
 class App extends React.Component {
   state = {
@@ -62,6 +63,7 @@ class App extends React.Component {
       <Router>
         <div style={{ height: "100%" }}>
           <Header drawerClickHandler={this.drawerToggleClickHandler} />
+
           <SideDrawer
             show={this.state.sideDrawerOpen}
             click={this.backdropClickHandler}
@@ -84,6 +86,7 @@ class App extends React.Component {
           />
           <Route path="/support" component={support} />
         </Switch>
+        <ScroolToTop />
         <Footer />
       </Router>
     );

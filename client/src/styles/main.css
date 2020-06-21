@@ -762,4 +762,12 @@ caption {
   max-width: 1080px;
   margin: 0 auto;
 }
+
+.scroll-to-top {
+  width: 40px;
+  position: fixed;
+  right: 5%;
+  bottom: 12px;
+  cursor: pointer;
+}
 /*# sourceMappingURL=main.css.map */
