@@ -7,7 +7,6 @@ import SideDrawer from "./components/sideDrawer/SideDrawer";
 import BackDrop from "./components/BackDrop";
 import yypoints from "./components/pages/YyPoints";
 import information from "./components/pages/Information";
-// import database from "./components/pages/SearchItem";
 import Staffs from "./components/pages/Staffs";
 import support from "./components/pages/Support";
 import Footer from "./components/Footer";
@@ -43,10 +42,14 @@ class App extends React.Component {
       });
     });
     axios.get("/review").then((response) => {
-      const setFirstThreeVar = response.data.slice(0, 5);
+      // const randRev =
+      //   response.data[Math.floor(Math.random() * response.data.length)];
+      // let fiveRanRev = randRev.slice(0, 5);
+      let randomReview = response.data
+        .sort(() => 0.5 - Math.random())
+        .slice(0, 4);
       this.setState({
-        reviewList: setFirstThreeVar,
-        review: response.data[0],
+        reviewList: randomReview,
       });
     });
   }

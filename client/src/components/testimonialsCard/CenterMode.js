@@ -45,13 +45,8 @@ export default class CenterMode extends Component {
         <Slider {...settings}>
           {this.props.reviewList.map((review) => (
             <div>
-              <h3>Serrow</h3>
-              <p className="review__cont">
-                Server has a good balance between helpful quality of life and
-                classic adventuring elements keeping close to the original. I
-                will continue to enjoy playing on this incredible server. 10/10
-                would recommend.
-              </p>
+              <h3>{review.name}</h3>
+              <p className="review__cont">{review.review}</p>
             </div>
           ))}
         </Slider>
