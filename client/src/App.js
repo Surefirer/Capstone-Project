@@ -23,6 +23,7 @@ class App extends React.Component {
     adminList: [],
     devList: [],
     GMList: [],
+    reviewList: [],
   };
 
   componentDidMount() {
@@ -41,6 +42,13 @@ class App extends React.Component {
         GMList: response.data,
       });
     });
+    axios.get("/review").then((response) => {
+      const setFirstThreeVar = response.data.slice(0, 5);
+      this.setState({
+        reviewList: setFirstThreeVar,
+        review: response.data[0],
+      });
+    });
   }
 
   drawerToggleClickHandler = () => {
@@ -54,7 +62,7 @@ class App extends React.Component {
   };
 
   render() {
-    const { adminList, devList, GMList } = this.state;
+    const { adminList, devList, GMList, reviewList } = this.state;
     let backdrop;
     if (this.state.sideDrawerOpen) {
       backdrop = <BackDrop click={this.backdropClickHandler} />;
@@ -71,7 +79,11 @@ class App extends React.Component {
           {backdrop}
         </div>
         <Switch>
-          <Route path="/" component={Home} exact />
+          <Route
+            path="/"
+            exact
+            render={(props) => <Home reviewList={reviewList} />}
+          />
           <Route path="/yypoints" component={yypoints} />
           <Route path="/information" component={information} />
           <Route path="/database/item" exact component={searchItem} />

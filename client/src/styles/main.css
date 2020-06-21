@@ -770,4 +770,15 @@ caption {
   bottom: 12px;
   cursor: pointer;
 }
+
+.review {
+  text-align: center;
+  width: 80%;
+  margin: 30px auto;
+}
+
+.review__cont {
+  text-align: left;
+  margin: 0 10px;
+}
 /*# sourceMappingURL=main.css.map */

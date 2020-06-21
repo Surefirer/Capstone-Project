@@ -3,11 +3,12 @@ import Clock from "react-live-clock";
 import newsImg from "../../assets/images/news.png";
 import { Icons } from "../assets";
 import AOS from "aos";
+import TestimonialsCard from "../testimonialsCard/CenterMode";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
 AOS.init({ duration: 2000 });
 
-function Home() {
+function Home(props) {
   return (
     <div className="main">
       <div className="main__hero">
@@ -73,23 +74,14 @@ function Home() {
           <h4>SIGN-UPS</h4>
         </div>
       </div>
+      <TestimonialsCard {...props} />
 
-      <div data-aos="fade" className="testimonials">
+      {/* <div data-aos="fade" className="testimonials">
         <h1 className="testimonials__title">TESTIMONIALS</h1>
-        <div className="testimonials__card">
-          <div className="testimonials__userName">
-            <h3>Serrow</h3>
-          </div>
-          <div className="testimonials__disc">
-            <p className="testimonials__quote">
-              Server has a good balance between helpful quality of life and
-              classic adventuring elements keeping close to the original. I will
-              continue to enjoy playing on this incredible server. 10/10 would
-              recommend.
-            </p>
-          </div>
+        <div className="testimonials__slider">
+          
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

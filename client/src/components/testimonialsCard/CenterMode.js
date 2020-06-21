@@ -1,0 +1,61 @@
+import React, { Component } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+export default class CenterMode extends Component {
+  render() {
+    const settings = {
+      dots: true,
+      infinite: false,
+      speed: 500,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      initialSlide: 0,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true,
+          },
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            initialSlide: 2,
+          },
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ],
+    };
+    return (
+      <div className="review">
+        <h2>TESTIMONIALS</h2>
+        <Slider {...settings}>
+          {this.props.reviewList.map((review) => (
+            <div>
+              <h3>Serrow</h3>
+              <p className="review__cont">
+                Server has a good balance between helpful quality of life and
+                classic adventuring elements keeping close to the original. I
+                will continue to enjoy playing on this incredible server. 10/10
+                would recommend.
+              </p>
+            </div>
+          ))}
+        </Slider>
+      </div>
+    );
+  }
+}
