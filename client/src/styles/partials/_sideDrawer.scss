@@ -45,3 +45,13 @@
 .side-drawer li:active {
     color: #fa923f;
 }
+
+// tablet version
+@include tabletSideBar {
+    .side-drawer {
+        transform: translateX(-110%);
+    }
+    .open {
+        transform: translateX(0);
+    }
+}

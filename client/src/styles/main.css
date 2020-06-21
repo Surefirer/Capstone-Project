@@ -334,6 +334,17 @@ textarea::placeholder {
   color: #fa923f;
 }
 
+@media (min-width: 321px) {
+  .side-drawer {
+    -webkit-transform: translateX(-110%);
+            transform: translateX(-110%);
+  }
+  .open {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
 .backdrop {
   position: fixed;
   width: 100%;
@@ -432,6 +443,7 @@ textarea::placeholder {
   height: 390px;
   background-color: #fafafa;
   text-align: center;
+  margin-bottom: 15px;
 }
 
 .main .server-intro__title {
@@ -459,10 +471,9 @@ textarea::placeholder {
 }
 
 .main .monthly-stat {
-  height: 640px;
   background-color: #fafafa;
   text-align: center;
-  margin: 15px 0;
+  padding-bottom: 50px;
 }
 
 .main .monthly-stat__title {
@@ -496,7 +507,7 @@ textarea::placeholder {
   height: 350px;
   background-color: #fafafa;
   text-align: center;
-  margin: 15px 0;
+  padding: 30px 0;
 }
 
 .main .testimonials__title {
@@ -545,16 +556,67 @@ textarea::placeholder {
 }
 
 @media (min-width: 768px) {
+  .yellow {
+    color: #e0e000;
+  }
+  .main__hero {
+    background-image: url("../assets/images/tablet_hero.png");
+    background-size: 650px;
+    background-repeat: no-repeat;
+    background-position: 50% 160px;
+  }
   .main__time {
     display: none;
   }
   .main__intro {
-    width: 70%;
+    width: 540px;
     margin-top: 20px;
   }
   .main__intro p {
-    font-size: 2rem;
-    line-height: 2rem;
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    font-family: TitilliumWeb-Light;
+  }
+  .tabletWrapper-body {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .server-intro {
+    width: 50%;
+    margin-right: 3px;
+    background-image: url("../assets/images/spore_sd2.png"), url("../assets/images/dokebi_sd2.png");
+    background-size: 120px, 140px;
+    background-repeat: no-repeat, no-repeat;
+    background-position: right bottom, left bottom;
+  }
+  .monthly-stat {
+    width: 50%;
+    height: 390px;
+    margin: 0 auto;
+    height: 390px;
+    background-color: #fafafa;
+    background-image: url("../assets/images/cat.png");
+    background-size: 250px;
+    background-repeat: no-repeat;
+    background-position: 50% 230px;
+    text-align: center;
+  }
+  .monthly-stat__cardWrapper {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .monthly-stat__card {
+    padding: 0 10px;
+  }
+  .monthly-stat__card img {
+    width: 30px;
   }
 }
 
@@ -590,6 +652,44 @@ textarea::placeholder {
   width: 220px;
   margin: 0 auto;
   padding-top: 30px;
+}
+
+.footer-qq {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    text-align: left;
+  }
+  .footer__social {
+    width: 50px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__social img {
+    height: 30px;
+    margin: 15px;
+  }
+  .footer-qq {
+    display: inline-block;
+  }
+  .footer-wrapper {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-qq img {
+    width: 100px;
+  }
 }
 
 .database {
@@ -872,7 +972,7 @@ caption {
 
 .review {
   text-align: center;
-  width: 80%;
+  width: 95%;
   margin: 15px auto;
   padding-bottom: 20px;
 }

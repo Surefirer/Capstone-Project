@@ -24,3 +24,39 @@
     margin: 0 auto;
     padding-top: 30px;
 }
+
+.footer-qq {
+    display: none;
+}
+
+// tablet version
+@include tablet {
+    .footer {
+        text-align: left;
+        &__social {
+            width: 50px;
+            align-items: center;
+            img {
+                height: 30px;
+                margin: 15px;
+            }
+        }
+    }
+    // .footer-wrapper {
+    //     width: 80%;
+    // }
+    .footer-qq {
+        display: inline-block;
+    }
+    .footer-wrapper {
+        width: 80%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .footer-qq {
+        img {
+            width: 100px;
+        }
+    }
+}

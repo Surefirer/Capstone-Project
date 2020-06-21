@@ -29,11 +29,13 @@ import dragon from "../assets/icons/dragon.svg";
 import code from "../assets/icons/code.svg";
 import userVisor from "../assets/icons/user-visor.svg";
 import arrowCircleUp from "../assets/icons/arrow-circle-up.svg";
+import QQ from "../assets/logos/QQ.png";
 
 const Logos = {
   logo: logo,
   yyrologohuicir: yyrologohuicir,
   gm00: gm00,
+  QQ: QQ,
 };
 
 const Icons = {

@@ -10,3 +10,9 @@
         @content;
     }
 }
+
+@mixin tabletSideBar {
+    @media (min-width: 321px) {
+        @content;
+    }
+}
