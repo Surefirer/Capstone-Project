@@ -1,7 +1,8 @@
 import React from "react";
 import { Logos } from "./assets";
+import Clock from "react-live-clock";
 import DrawerToggleButton from "../components/sideDrawer/DrawerToggleButton";
-//import { NavLink, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 // function Header(props) {
 class Header extends React.Component {
@@ -29,15 +30,40 @@ class Header extends React.Component {
             <DrawerToggleButton click={this.props.drawerClickHandler} />
           </div>
           <div className="nav-bar__logo">
-            <img src={Logos.logo} alt="yyro logo" />
+            <Link to={"/"}>
+              <img src={Logos.logo} alt="yyro logo" />
+            </Link>
           </div>
 
           <ul className="nav-bar__menu">
-            <li>Information</li>
+            <Link to="/information">
+              <li>Information</li>
+            </Link>
             <li>Download</li>
-            <li>Forum</li>
-            <li>Database</li>
+            <li>
+              <a href="http://yyragnarok.com/forum.php">Forum</a>
+            </li>
+            <li>
+              Search
+              <ul className="nav-bar__subMenu">
+                <Link to="/database/item">
+                  <li>Item</li>
+                </Link>
+                <Link to="/database/monster">
+                  <li>Monster</li>
+                </Link>
+              </ul>
+            </li>
+            <Link to="/staffs">
+              <li>Staffs</li>
+            </Link>
+            <Link to="/support">
+              <li>Support</li>
+            </Link>
           </ul>
+          <div className="nav-bar__clock">
+            <Clock format={"HH:mm:ss"} ticking={true} timezone={"US/Pacific"} />
+          </div>
         </div>
       </>
     );

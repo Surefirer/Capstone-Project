@@ -24,3 +24,57 @@
 .scrolled {
     background-color: rgba(0, 0, 0, 0.5);
 }
+
+// tablet version
+@include tablet {
+    .nav-bar {
+        z-index: 100;
+        display: flex;
+        &__menu {
+            display: flex;
+            width: 65%;
+            justify-content: space-between;
+        }
+        &__subMenu {
+            display: flex;
+            flex-direction: column;
+            display: none;
+            li {
+                margin: 5px 0;
+            }
+        }
+        &__logo {
+            justify-content: flex-start;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+        &__clock {
+            font-size: 1.4rem;
+            color: $white;
+            position: absolute;
+            right: 20px;
+        }
+    }
+}
+
+
+/* show submenu on hover*/
+
+.nav-bar__menu li:hover>.nav-bar__subMenu {
+    display: flex;
+    animation: slideup .5s ease;
+}
+
+
+/* Animation Keyframes */
+
+@keyframes slideup {
+    0% {
+        opacity: 0;
+        transform: translateY(-18px);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}

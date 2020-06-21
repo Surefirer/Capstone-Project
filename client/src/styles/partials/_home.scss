@@ -168,3 +168,20 @@
         }
     }
 }
+
+// tablet version 
+@include tablet {
+    .main {
+        &__time {
+            display: none;
+        }
+        &__intro {
+            width: 70%;
+            margin-top: 20px;
+            p {
+                font-size: 2rem;
+                line-height: 2rem;
+            }
+        }
+    }
+}

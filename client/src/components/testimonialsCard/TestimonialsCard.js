@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-export default class CenterMode extends Component {
+export default class TestimonialsCard extends Component {
   render() {
     const settings = {
       dots: true,
@@ -41,10 +41,10 @@ export default class CenterMode extends Component {
     };
     return (
       <div className="review">
-        <h2>TESTIMONIALS</h2>
+        <h1>TESTIMONIALS</h1>
         <Slider {...settings}>
           {this.props.reviewList.map((review) => (
-            <div>
+            <div data-aos="fade" className="review-card">
               <h3>{review.name}</h3>
               <p className="review__cont">{review.review}</p>
             </div>

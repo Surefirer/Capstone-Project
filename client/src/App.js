@@ -47,7 +47,7 @@ class App extends React.Component {
       // let fiveRanRev = randRev.slice(0, 5);
       let randomReview = response.data
         .sort(() => 0.5 - Math.random())
-        .slice(0, 4);
+        .slice(0, 3);
       this.setState({
         reviewList: randomReview,
       });

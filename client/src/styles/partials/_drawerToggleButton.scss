@@ -22,3 +22,10 @@
     height: 0.5px;
     background: #e4dfdf;
 }
+
+//tablet version
+@include tablet {
+    .toggle-button {
+        display: none;
+    }
+}

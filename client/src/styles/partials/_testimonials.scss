@@ -1,10 +1,46 @@
 .review {
     text-align: center;
     width: 80%;
-    margin: 30px auto;
+    margin: 15px auto;
+    padding-bottom: 20px;
+    h1 {
+        display: inline-block;
+        position: relative;
+        font-family: TitilliumWeb-Bold;
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            height: 4px;
+            width: 40%;
+            left: calc(50% - 20%);
+            background: #c7c719;
+        }
+    }
 }
 
 .review__cont {
     text-align: left;
-    margin: 0 10px;
+    padding-top: 30px;
+    &:before {
+        content: "";
+        background: url(../assets/icons/quote-left-solid.svg) no-repeat;
+        width: 14px;
+        height: 14px;
+        display: inline-block;
+        margin-right: 5px;
+    }
+    &:after {
+        content: "";
+        background: url(../assets/icons/quote-right-solid.svg) no-repeat;
+        width: 14px;
+        height: 14px;
+        display: inline-block;
+        margin-left: 5px;
+    }
+}
+
+.review-card {
+    margin: 50px auto;
+    padding: 0 20px;
 }
