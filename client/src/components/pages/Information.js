@@ -86,7 +86,7 @@ function Information() {
       <div className="custom-feature">
         <div className="custom-feature__title">
           <img id="staffs_admin__uvIcon" src={Icons.starShooting} alt="" />
-          <h2>Customer Feature</h2>
+          <h2>Custom Features</h2>
         </div>
         <div className="custom-feature__titleCont">
           <p>

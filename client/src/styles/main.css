@@ -667,6 +667,23 @@ textarea::placeholder {
   }
 }
 
+@media (min-width: 1080px) {
+  .main__hero {
+    background-image: url("../assets/images/tablet_hero.png"), url("../assets/images/royalguard_f_sd2.png"), url("../assets/images/runeknight_m_sd2.png");
+    background-size: 650px, 300px, 355px;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 50% 160px, 7% 50%, 93% 50%;
+  }
+  .server-intro {
+    width: 50%;
+    margin-right: 3px;
+    background-image: url("../assets/images/spore_sd2.png"), url("../assets/images/dokebi_sd2.png"), url("../assets/images/kafrag_sd2.png");
+    background-size: 200px, 250px, 250px;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: right bottom, left bottom, 50% 200px;
+  }
+}
+
 .footer {
   height: 200px;
   background-color: #fafafa;
