@@ -164,7 +164,7 @@ function Information() {
           <table className="pvp__table">
             <caption>WoE times(server Time)</caption>
             <tr>
-              <td>WoE: Friday at 10:00PM</td>
+              <td className="pvp__table--center">WoE: Friday at 10:00PM</td>
             </tr>
           </table>
         </div>

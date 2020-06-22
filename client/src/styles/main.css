@@ -1134,12 +1134,16 @@ caption {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 90%;
   margin: 0 auto;
 }
 
 .genInfo-table {
   margin: 0 10px;
+  max-width: 300px;
   border-radius: 10px;
   background-color: rgba(201, 201, 201, 0.211);
 }
@@ -1203,5 +1207,19 @@ caption {
 .dressUp__table {
   border-radius: 10px;
   background-color: rgba(201, 201, 201, 0.211);
+}
+
+.custom-feature .pvp__table--center,
+.events .pvp__table--center,
+.pvp .pvp__table--center,
+.dressUp .pvp__table--center {
+  text-align: center;
+}
+
+.custom-feature .pvp__table,
+.events .pvp__table,
+.pvp .pvp__table,
+.dressUp .pvp__table {
+  max-width: 300px;
 }
 /*# sourceMappingURL=main.css.map */
