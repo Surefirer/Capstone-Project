@@ -42,8 +42,10 @@
             display: flex;
             flex-direction: column;
             display: none;
+            background-color: rgba(0, 0, 0, 0.5);
             li {
                 margin: 5px 0;
+                padding: 5px;
             }
         }
         &__logo {
@@ -80,5 +82,26 @@
     100% {
         opacity: 1;
         transform: none;
+    }
+}
+
+// desktop version
+@include desktop {
+    .nav-bar {
+        &__menu {
+            width: 40%;
+            margin-left: 40px;
+        }
+        &__logo {
+            margin-left: 15%;
+            margin-right: 30px;
+        }
+        &__clock {
+            font-size: 1.4rem;
+            color: $white;
+            position: absolute;
+            right: 15%;
+            top: 6px;
+        }
     }
 }
