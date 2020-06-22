@@ -1139,30 +1139,45 @@ caption {
 }
 
 .genInfo-table {
-  margin: 0 3px;
+  margin: 0 10px;
   border-radius: 10px;
-  background-color: rgba(174, 174, 174, 0.387);
+  background-color: rgba(201, 201, 201, 0.211);
 }
 
-.custom-feature {
+.custom-feature,
+.events,
+.pvp,
+.dressUp {
   margin: 30px 0;
 }
 
-.custom-feature__title {
+.custom-feature__title,
+.events__title,
+.pvp__title,
+.dressUp__title {
   text-align: center;
 }
 
-.custom-feature__title img {
+.custom-feature__title img,
+.events__title img,
+.pvp__title img,
+.dressUp__title img {
   width: 25px;
   margin-right: 10px;
 }
 
-.custom-feature__title h2 {
+.custom-feature__title h2,
+.events__title h2,
+.pvp__title h2,
+.dressUp__title h2 {
   display: inline-block;
   position: relative;
 }
 
-.custom-feature__title h2:after {
+.custom-feature__title h2:after,
+.events__title h2:after,
+.pvp__title h2:after,
+.dressUp__title h2:after {
   content: "";
   position: absolute;
   bottom: -5px;
@@ -1172,15 +1187,21 @@ caption {
   background: #c7c719;
 }
 
-.custom-feature__titleCont {
+.custom-feature__titleCont,
+.events__titleCont,
+.pvp__titleCont,
+.dressUp__titleCont {
   width: 80%;
   max-width: 1080px;
   margin: 25px auto;
   line-height: 1.3rem;
 }
 
-.custom-feature__table {
+.custom-feature__table,
+.events__table,
+.pvp__table,
+.dressUp__table {
   border-radius: 10px;
-  background-color: rgba(174, 174, 174, 0.387);
+  background-color: rgba(201, 201, 201, 0.211);
 }
 /*# sourceMappingURL=main.css.map */

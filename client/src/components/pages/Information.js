@@ -85,7 +85,7 @@ function Information() {
 
       <div className="custom-feature">
         <div className="custom-feature__title">
-          <img id="staffs_admin__uvIcon" src={Icons.starSolidB} alt="" />
+          <img id="staffs_admin__uvIcon" src={Icons.starShooting} alt="" />
           <h2>Customer Feature</h2>
         </div>
         <div className="custom-feature__titleCont">
@@ -123,6 +123,67 @@ function Information() {
             <td>LGP</td>
           </tr>
         </table>
+
+        <div className="events">
+          <div className="events__title">
+            <img id="staffs_admin__uvIcon" src={Icons.dice} alt="" />
+            <h2>Events</h2>
+          </div>
+          <div className="events__titleCont">
+            <p>
+              With many events, there is always something to do! Our automated
+              events activate several times a day. When it is time for such an
+              event to begin, it is broadcast in-game, after which a glowing NPC
+              makes an appearance in Prontera. You have a couple of minutes to
+              talk to this NPC to join before the entrance is closed. Winners
+              are rewarded with YY Gold Coins.
+            </p>
+          </div>
+        </div>
+
+        <div className="pvp">
+          <div className="pvp__title">
+            <img src={Icons.shieldAlt} alt="" />
+            <h2>PvP and PvM</h2>
+          </div>
+          <div className="pvp__titleCont">
+            <p>
+              While our official language remains Chinese, we are a truly
+              international server with players from all corners of the world.
+              This means that there will always be many players online
+              regardless of your timezone.
+            </p>
+            <p>
+              For PvP oriented players we have Battlegrounds, If instead of
+              fighting other players you would rather team up to take on
+              different bosses, don't hesistate to try our Boss Nest instances.
+              These are challenging end-game PvM experiences for small parties.
+            </p>
+          </div>
+
+          <table className="pvp__table">
+            <caption>WoE times(server Time)</caption>
+            <tr>
+              <td>WoE: Friday at 10:00PM</td>
+            </tr>
+          </table>
+        </div>
+
+        <div className="dressUp">
+          <div className="dressUp__title">
+            <img src={Icons.crown} alt="" />
+            <h2>Dress Up!</h2>
+          </div>
+          <div className="dressUp__titleCont">
+            <p>
+              If character customization is closer to your heart, we have a
+              great number of headgears and quests for fashionistas both big and
+              small. This means you can wear another hat underneath which
+              looking as stylish as ever! Come find your favorite so you can
+              slay monsters and make new friends while looking fabulous!
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );

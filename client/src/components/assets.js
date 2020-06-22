@@ -31,6 +31,10 @@ import userVisor from "../assets/icons/user-visor.svg";
 import arrowCircleUp from "../assets/icons/arrow-circle-up.svg";
 import QQ from "../assets/logos/QQ.png";
 import starSolidB from "../assets/icons/star-solid-b.svg";
+import dice from "../assets/icons/dice.svg";
+import shieldAlt from "../assets/icons/shield-alt.svg";
+import crown from "../assets/icons/crown.svg";
+import starShooting from "../assets/icons/star-shooting.svg";
 
 const Logos = {
   logo: logo,
@@ -69,6 +73,10 @@ const Icons = {
   userVisor: userVisor,
   arrowCircleUp: arrowCircleUp,
   starSolidB: starSolidB,
+  dice: dice,
+  shieldAlt: shieldAlt,
+  crown: crown,
+  starShooting: starShooting,
 };
 
 export { Logos };
