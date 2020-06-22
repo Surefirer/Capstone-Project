@@ -30,6 +30,7 @@ import code from "../assets/icons/code.svg";
 import userVisor from "../assets/icons/user-visor.svg";
 import arrowCircleUp from "../assets/icons/arrow-circle-up.svg";
 import QQ from "../assets/logos/QQ.png";
+import starSolidB from "../assets/icons/star-solid-b.svg";
 
 const Logos = {
   logo: logo,
@@ -67,6 +68,7 @@ const Icons = {
   code: code,
   userVisor: userVisor,
   arrowCircleUp: arrowCircleUp,
+  starSolidB: starSolidB,
 };
 
 export { Logos };

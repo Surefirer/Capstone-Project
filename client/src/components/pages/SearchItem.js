@@ -62,28 +62,20 @@ class SearchItem extends Component {
           </form>
         </div>
 
-        <div className="searchItem-result">
-          <table>
-            <thead>
-              <tr>
-                <th>Id</th>
-                <th>Name</th>
-              </tr>
-            </thead>
-
-            <tbody>
-              <tr>
-                <td>
-                  {" "}
-                  <Link to={`/database/item/${this.state.items.id}`}>
-                    {this.state.items.id}
-                  </Link>
-                </td>
-                <td>{this.state.items.name}</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+        <table className="searchItem-result">
+          <tr>
+            <td>Id</td>
+            <td>Name</td>
+          </tr>
+          <tr>
+            <td>
+              <Link to={`/database/item/${this.state.items.id}`}>
+                {this.state.items.id}
+              </Link>
+            </td>
+            <td>{this.state.items.name}</td>
+          </tr>
+        </table>
       </div>
     );
   }

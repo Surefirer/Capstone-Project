@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import axios from "axios";
 import Home from "./components/pages/Home";
+import Download from "./components/pages/Download";
 import Header from "./components/Header";
 import SideDrawer from "./components/sideDrawer/SideDrawer";
 import BackDrop from "./components/BackDrop";
@@ -98,6 +99,7 @@ class App extends React.Component {
           <Route path="/database/item/:id" component={ItemSummary} />
           <Route path="/database/monster" exact component={searchMonster} />
           <Route path="/database/monster/:id" component={MonsterSummary} />
+          <Route path="/download" component={Download} />
           <Route
             path="/staffs"
             render={(props) => (

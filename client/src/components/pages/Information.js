@@ -1,9 +1,129 @@
 import React from "react";
+import { Logos } from "../assets";
+import { Icons } from "../assets";
 
 function Information() {
   return (
-    <div>
-      <h1>Information Page:)</h1>
+    <div className="information">
+      <div className="information__logo">
+        <img src={Logos.logo} alt="" />
+      </div>
+      <div className="information__title">
+        <h1>Server Information</h1>
+        <div className="information__titleCont">
+          <p>
+            YYRO is a free-to-play Ragnarok Online private server that seeks out
+            to bring you the best and most fun Renewal experience possible.With
+            us you can enjoy a multitude of official instances, fully
+            implemented 3rd jobs, functioning Achievement and Title System, and
+            much more. We work hard on our updates and take pride in being able
+            to offer something for everyone. So hop online and begin forging
+            your own unforgettable adventure! If you are new to the game, you
+            can read our Getting Started guide for more information in the
+            forum.
+          </p>
+        </div>
+      </div>
+
+      <div className="serverInfoTab-container">
+        <table className="genInfo-table">
+          <caption>server Information</caption>
+          <tbody>
+            <tr>
+              <td>Episode</td>
+              <td>16.2 Renewal</td>
+            </tr>
+            <tr>
+              <td>Max Level</td>
+              <td>200/70</td>
+            </tr>
+            <tr>
+              <td>Max Stats</td>
+              <td>130(3rd job)</td>
+            </tr>
+            <tr>
+              <td>Max ASPD</td>
+              <td>193</td>
+            </tr>
+            <tr>
+              <td>Open Since</td>
+              <td>Octorber, 2018</td>
+            </tr>
+            <tr>
+              <td>Part Share</td>
+              <td>50 Levels</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table className="genInfo-table">
+          <caption>Exp and Drop Rates</caption>
+          <tbody>
+            <tr>
+              <td>Base & Job</td>
+              <td>30x</td>
+            </tr>
+            <tr>
+              <td>Quest EXP</td>
+              <td>30x</td>
+            </tr>
+            <tr>
+              <td>Item Drop</td>
+              <td>50x</td>
+            </tr>
+            <tr>
+              <td>Card Drop</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>MVP Card Drop</td>
+              <td>5x</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div className="custom-feature">
+        <div className="custom-feature__title">
+          <img id="staffs_admin__uvIcon" src={Icons.starSolidB} alt="" />
+          <h2>Customer Feature</h2>
+        </div>
+        <div className="custom-feature__titleCont">
+          <p>
+            Our custom features are designed for maximum engagement while
+            providing you with the top-tier official content. To this effort, we
+            have removed the Renewal drop penalty and increased the party share
+            limit so you can play with more friends while obtaining full loot.
+          </p>
+          <p>
+            We have also worked tirelessly to keep RO fresh by developing
+            authentic experiences, which include our famed seasonal events.
+            Below are a few exerpts of what we have on offer. If you would like
+            to learn more about our customizations, including the player
+            commands we provide, all of the other nitty-gritty details can be
+            found on our fourm.
+          </p>
+        </div>
+
+        <table className="custom-feature__table">
+          <tr>
+            <td>New Beginner Tutorial</td>
+            <td>Main Office</td>
+          </tr>
+          <tr>
+            <td>Automated Events</td>
+            <td>Vending Map</td>
+          </tr>
+          <tr>
+            <td>Quest Boards up to 175</td>
+            <td>Achievements and Titles</td>
+          </tr>
+          <tr>
+            <td>Renewal Drop penalty removed</td>
+            <td>LGP</td>
+          </tr>
+        </table>
+      </div>
     </div>
   );
 }

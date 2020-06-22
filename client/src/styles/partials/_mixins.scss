@@ -16,3 +16,9 @@
         @content;
     }
 }
+
+// white background box style
+@mixin whiteBox {
+    border-radius: 10px;
+    background-color: rgba(174, 174, 174, 0.387);
+}

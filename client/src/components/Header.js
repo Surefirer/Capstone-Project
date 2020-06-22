@@ -39,7 +39,9 @@ class Header extends React.Component {
             <Link to="/information">
               <li>Information</li>
             </Link>
-            <li>Download</li>
+            <Link to="/download">
+              <li>Download</li>
+            </Link>
             <li>
               <a href="http://yyragnarok.com/forum.php">Forum</a>
             </li>
