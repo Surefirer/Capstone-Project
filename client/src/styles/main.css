@@ -1058,7 +1058,7 @@ caption {
   color: #323232;
   width: 300px;
   height: 400px;
-  border: 0.05rem solid black;
+  border: 0.05rem solid #c9c9c9;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 10px;
   margin: 0 auto;
