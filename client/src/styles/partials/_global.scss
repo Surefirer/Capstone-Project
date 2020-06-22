@@ -6,6 +6,7 @@ body {
     font-size: 16px;
     color: $black;
     height: 100%;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
 Link {

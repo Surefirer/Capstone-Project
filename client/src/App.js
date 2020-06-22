@@ -23,6 +23,7 @@ class App extends React.Component {
     devList: [],
     GMList: [],
     reviewList: [],
+    patchList: [],
   };
 
   componentDidMount() {
@@ -42,14 +43,16 @@ class App extends React.Component {
       });
     });
     axios.get("/review").then((response) => {
-      // const randRev =
-      //   response.data[Math.floor(Math.random() * response.data.length)];
-      // let fiveRanRev = randRev.slice(0, 5);
       let randomReview = response.data
         .sort(() => 0.5 - Math.random())
         .slice(0, 3);
       this.setState({
         reviewList: randomReview,
+      });
+    });
+    axios.get("/patchs").then((response) => {
+      this.setState({
+        patchList: response.data,
       });
     });
   }
@@ -65,7 +68,7 @@ class App extends React.Component {
   };
 
   render() {
-    const { adminList, devList, GMList, reviewList } = this.state;
+    const { adminList, devList, GMList, reviewList, patchList } = this.state;
     let backdrop;
     if (this.state.sideDrawerOpen) {
       backdrop = <BackDrop click={this.backdropClickHandler} />;
@@ -85,7 +88,9 @@ class App extends React.Component {
           <Route
             path="/"
             exact
-            render={(props) => <Home reviewList={reviewList} />}
+            render={(props) => (
+              <Home reviewList={reviewList} patchList={patchList} />
+            )}
           />
           <Route path="/yypoints" component={yypoints} />
           <Route path="/information" component={information} />

@@ -6,6 +6,7 @@ const getAdministratorList = require("./controller/getAdministratorList");
 const getDevList = require("./controller/getDevList");
 const getGMList = require("./controller/getGMList");
 const getReviewList = require("./controller/getReviewList");
+const getPatchList = require("./controller/getPatchList");
 
 // Middleware
 app.use(express.json());
@@ -33,6 +34,11 @@ app.get("/gameMaster", (req, res) => {
 // api info endpoint for dev
 app.get("/review", (req, res) => {
   res.json(getReviewList());
+});
+
+// api info endpoint for dev
+app.get("/patchs", (req, res) => {
+  res.json(getPatchList());
 });
 
 const PORT = process.env.PORT || 5000;

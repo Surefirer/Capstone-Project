@@ -1,0 +1,43 @@
+[{
+        "id": "p0",
+        "name": "PATCH NOTES",
+        "date": "JUN 7, 2020",
+        "cover": "http://yyragnarok.com/images/patchCover/patchCover01.png",
+        "forumUrl": "http://yyragnarok.com/forum.php?mod=viewthread&tid=459&extra=page%3D1"
+    },
+    {
+        "id": "p1",
+        "name": "PATCH NOTES",
+        "date": "MAY 30, 2020",
+        "cover": "http://yyragnarok.com/images/patchCover/patchCover02.png",
+        "forumUrl": "http://yyragnarok.com/forum.php?mod=viewthread&tid=456&extra=page%3D1"
+    },
+    {
+        "id": "p2",
+        "name": "PATCH NOTES",
+        "date": "MAY 22, 2020",
+        "cover": "http://yyragnarok.com/images/patchCover/patchCover03.png",
+        "forumUrl": "http://yyragnarok.com/forum.php?mod=viewthread&tid=453&extra=page%3D1"
+    },
+    {
+        "id": "p3",
+        "name": "PATCH NOTES",
+        "date": "MAY 17, 2020",
+        "cover": "http://yyragnarok.com/images/patchCover/patchCover04.png",
+        "forumUrl": "http://yyragnarok.com/forum.php?mod=viewthread&tid=448&extra=page%3D1"
+    },
+    {
+        "id": "p4",
+        "name": "PATCH NOTES",
+        "date": "MAY 10, 2020",
+        "cover": "http://yyragnarok.com/images/patchCover/patchCover05.png",
+        "forumUrl": "http://yyragnarok.com/forum.php?mod=viewthread&tid=442&extra=page%3D1"
+    },
+    {
+        "id": "p5",
+        "name": "PATCH NOTES",
+        "date": "MAY 3, 2020",
+        "cover": "http://yyragnarok.com/images/patchCover/patchCover06.png",
+        "forumUrl": "http://yyragnarok.com/forum.php?mod=viewthread&tid=438&extra=page%3D1"
+    }
+]

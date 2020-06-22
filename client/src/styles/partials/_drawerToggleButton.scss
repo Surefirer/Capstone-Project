@@ -7,10 +7,11 @@
     margin: auto 10px;
     position: fixed;
     top: 15px;
-    background: transparent;
+    background-color: transparent;
     border: none;
     cursor: pointer;
     padding: 0;
+    outline: none;
 }
 
 .toggle-button:focus {

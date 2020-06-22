@@ -1,9 +1,10 @@
 import React from "react";
 import Clock from "react-live-clock";
-import newsImg from "../../assets/images/news.png";
+//import newsImg from "../../assets/images/news.png";
 import { Icons } from "../assets";
 import AOS from "aos";
 import TestimonialsCard from "../testimonialsCard/TestimonialsCard";
+import PatchNews from "../patchNews/PatchNews";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
 AOS.init({ duration: 2000 });
@@ -27,20 +28,26 @@ function Home(props) {
         </div>
       </div>
 
-      <a href="http://yyragnarok.com/forum.php?mod=viewthread&tid=459&extra=page%3D1">
-        <div className="news">
-          <div className="news__title">
-            <h1>LATEST NEWS</h1>
-          </div>
-          <div className="news__cover">
-            <img src={newsImg} alt="" />
-          </div>
-          <div className="news__sub">
-            <h2>Jun 7,2020</h2>
-            <h3 className="news__pn">Patch Notes</h3>
-          </div>
+      <div className="news">
+        <div className="news__title">
+          <h1>LATEST NEWS</h1>
         </div>
-      </a>
+
+        {/* <div className="news__patchCardWrapper"> */}
+        <PatchNews {...props} />
+        {/* <a href="http://yyragnarok.com/forum.php?mod=viewthread&tid=459&extra=page%3D1">
+            <div className="news__patchCard">
+              <div className="news__cover">
+                <img src={newsImg} alt="" />
+              </div>
+              <div className="news__sub">
+                <h2>Jun 7,2020</h2>
+                <h3 className="news__pn">Patch Notes</h3>
+              </div>
+            </div>
+          </a> */}
+      </div>
+
       <div className="tabletWrapper-body">
         <div className="server-intro">
           <div className="server-intro__title">
@@ -64,7 +71,7 @@ function Home(props) {
           <div className="monthly-stat__cardWrapper">
             <div
               data-aos="fade-up"
-              data-aos-duration="600"
+              data-aos-duration="1000"
               className="monthly-stat__card"
             >
               <img src={Icons.trophySolid} alt="" />
@@ -73,7 +80,7 @@ function Home(props) {
             </div>
             <div
               data-aos="fade-up"
-              data-aos-duration="600"
+              data-aos-duration="1000"
               className="monthly-stat__card"
             >
               <img src={Icons.userSolid} alt="" />
@@ -82,7 +89,7 @@ function Home(props) {
             </div>
             <div
               data-aos="fade-up"
-              data-aos-duration="600"
+              data-aos-duration="1000"
               className="monthly-stat__card"
             >
               <img src={Icons.addressCardSolid} alt="" />
