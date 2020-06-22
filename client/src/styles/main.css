@@ -142,6 +142,10 @@ textarea::placeholder {
   width: 80px;
 }
 
+.nav-bar__clock {
+  display: none;
+}
+
 .scrolled {
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -183,6 +187,7 @@ textarea::placeholder {
     margin-right: 30px;
   }
   .nav-bar__clock {
+    display: inline-block;
     font-size: 1.4rem;
     color: #ffffff;
     position: absolute;
@@ -195,8 +200,8 @@ textarea::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-animation: slideup .5s ease;
-          animation: slideup .5s ease;
+  -webkit-animation: slideup 0.5s ease;
+          animation: slideup 0.5s ease;
 }
 
 /* Animation Keyframes */
