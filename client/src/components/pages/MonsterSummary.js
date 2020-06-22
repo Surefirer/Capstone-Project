@@ -10,9 +10,10 @@ class MonsterSummary extends Component {
   };
 
   componentDidMount() {
+    const id = this.props.match.params.id;
     axios
       .get(
-        `https://cors-anywhere.herokuapp.com/https://www.divine-pride.net/api/database/monster/1002?apiKey=02c7580d618374dbc3f1a593291d5394`
+        `https://cors-anywhere.herokuapp.com/https://www.divine-pride.net/api/database/monster/${id}?apiKey=02c7580d618374dbc3f1a593291d5394`
       )
       .then(
         (response) => {
