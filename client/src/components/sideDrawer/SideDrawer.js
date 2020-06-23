@@ -20,7 +20,7 @@ const sideDrawer = (props) => {
             Home
           </li>
         </Link>
-        <Link to="/yypoints">
+        {/* <Link to="/yypoints">
           <li>
             <img
               className="side-drawer__svg"
@@ -29,7 +29,7 @@ const sideDrawer = (props) => {
             />
             YY Points
           </li>
-        </Link>
+        </Link> */}
         <Link to="/information">
           <li>
             <img
