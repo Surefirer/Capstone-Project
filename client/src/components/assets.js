@@ -40,6 +40,8 @@ import bug from "../assets/icons/bug.svg";
 import angry from "../assets/icons/angry.svg";
 import userCrown from "../assets/icons/user-crown.svg";
 import chargingStation from "../assets/icons/charging-station.svg";
+import mediaFire from "../assets/icons/mediaFire.svg";
+import qqBrands from "../assets/icons/qq-brands.svg";
 
 const Logos = {
   logo: logo,
@@ -87,6 +89,8 @@ const Icons = {
   angry: angry,
   userCrown: userCrown,
   chargingStation: chargingStation,
+  mediaFire: mediaFire,
+  qqBrands: qqBrands,
 };
 
 export { Logos };

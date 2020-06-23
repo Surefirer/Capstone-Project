@@ -422,6 +422,16 @@ textarea::placeholder {
   line-height: 1.5rem;
   text-align: center;
   max-width: 260px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main .news {
@@ -488,10 +498,9 @@ textarea::placeholder {
 }
 
 .main .server-intro {
-  height: 390px;
   background-color: #fafafa;
   text-align: center;
-  margin-bottom: 15px;
+  padding: 15px 0;
 }
 
 .main .server-intro__title {
@@ -635,16 +644,16 @@ textarea::placeholder {
   .server-intro {
     width: 50%;
     margin-right: 3px;
-    background-image: url("../assets/images/spore_sd2.png"), url("../assets/images/dokebi_sd2.png");
-    background-size: 120px, 140px;
-    background-repeat: no-repeat, no-repeat;
-    background-position: right bottom, left bottom;
+    margin-bottom: 0;
+    background-image: url("../assets/images/spore_sd2.png"), url("../assets/images/dokebi_sd2.png"), url("../assets/images/kafrag_sd2.png");
+    background-size: 120px, 140px, 140px;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: right bottom, left bottom, 50% 300px;
   }
   .monthly-stat {
     width: 50%;
     height: 390px;
     margin: 0 auto;
-    height: 390px;
     background-color: #fafafa;
     background-image: url("../assets/images/cat.png");
     background-size: 250px;
@@ -1393,6 +1402,7 @@ caption {
 .download__title h1 {
   display: inline-block;
   position: relative;
+  font-family: TitilliumWeb-Bold;
 }
 
 .download__title h1:after {
@@ -1407,12 +1417,78 @@ caption {
 
 .download__titleCont {
   width: 80%;
-  max-width: 1080px;
+  max-width: 445px;
   margin: 25px auto;
   line-height: 1.2rem;
 }
 
 .download__titleCont p {
-  line-height: 1.3rem;
+  line-height: 3rem;
+  font-size: 1.3rem;
+}
+
+.download__clientCard {
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 250px;
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  color: #323232;
+}
+
+.download__clientCard img {
+  height: 50px;
+  margin: 10px 0;
+}
+
+.download-clientWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.download-red:hover {
+  background-color: red;
+  border: 2px solid red;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.download-blue:hover {
+  background-color: blue;
+  border: 2px solid blue;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+@media (min-width: 768px) {
+  .download-clientWrapper {
+    margin-top: 50px;
+  }
+  .download__titleCont {
+    max-width: 800px;
+    margin-top: 60px;
+  }
+  .download__titleCont p {
+    font-size: 1.5rem;
+    line-height: 3.5rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -29,6 +29,9 @@
         line-height: 1.5rem;
         text-align: center;
         max-width: 260px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .news {
         font-family: PermanentMarker-Regular;
@@ -82,10 +85,11 @@
         }
     }
     .server-intro {
-        height: 390px;
+        // height: 390px;
         background-color: #fafafa;
         text-align: center;
-        margin-bottom: 15px;
+        // margin-bottom: 15px;
+        padding: 15px 0;
         &__title {
             font-family: TitilliumWeb-Bold;
             line-height: 2rem;
@@ -220,16 +224,16 @@
     .server-intro {
         width: 50%;
         margin-right: 3px;
-        background-image: url("../assets/images/spore_sd2.png"), url("../assets/images/dokebi_sd2.png");
-        background-size: 120px, 140px;
-        background-repeat: no-repeat, no-repeat;
-        background-position: right bottom, left bottom;
+        margin-bottom: 0;
+        background-image: url("../assets/images/spore_sd2.png"), url("../assets/images/dokebi_sd2.png"), url("../assets/images/kafrag_sd2.png");
+        background-size: 120px, 140px, 140px;
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-position: right bottom, left bottom, 50% 300px;
     }
     .monthly-stat {
         width: 50%;
         height: 390px;
         margin: 0 auto;
-        height: 390px;
         background-color: #fafafa;
         background-image: url("../assets/images/cat.png");
         background-size: 250px;

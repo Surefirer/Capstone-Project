@@ -1,6 +1,6 @@
 import React from "react";
 import Clock from "react-live-clock";
-//import newsImg from "../../assets/images/news.png";
+import { Link } from "react-router-dom";
 import { Icons } from "../assets";
 import AOS from "aos";
 import TestimonialsCard from "../testimonialsCard/TestimonialsCard";
@@ -22,8 +22,9 @@ function Home(props) {
             together in an active, friendly community.
           </p>
           <p>
-            {" "}
-            <span className="yellow">Download it today!</span>
+            <Link to="/download">
+              <span className="yellow">Download it today!</span>
+            </Link>
           </p>
         </div>
       </div>

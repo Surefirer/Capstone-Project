@@ -17,6 +17,7 @@
         h1 {
             display: inline-block;
             position: relative;
+            font-family: TitilliumWeb-Bold;
             &:after {
                 content: "";
                 position: absolute;
@@ -30,11 +31,62 @@
     }
     &__titleCont {
         width: 80%;
-        max-width: 1080px;
+        max-width: 445px;
         margin: 25px auto;
         line-height: 1.2rem;
         p {
-            line-height: 1.3rem;
+            line-height: 3rem;
+            font-size: 1.3rem;
+        }
+    }
+    &__clientCard {
+        border: 2px solid black;
+        border-radius: 10px;
+        width: 250px;
+        margin: 20px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+        color: $black;
+        img {
+            height: 50px;
+            margin: 10px 0;
+        }
+    }
+}
+
+.download-clientWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.download-red:hover {
+    background-color: red;
+    border: 2px solid red;
+    transition: 0.5s ease-in-out;
+}
+
+.download-blue:hover {
+    background-color: blue;
+    border: 2px solid blue;
+    transition: 0.5s ease-in-out;
+}
+
+// tablet
+@include tablet {
+    .download-clientWrapper {
+        margin-top: 50px;
+    }
+    .download {
+        &__titleCont {
+            max-width: 800px;
+            margin-top: 60px;
+            p {
+                font-size: 1.5rem;
+                line-height: 3.5rem;
+            }
         }
     }
 }
