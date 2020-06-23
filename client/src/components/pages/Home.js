@@ -33,20 +33,7 @@ function Home(props) {
         <div className="news__title">
           <h1>LATEST NEWS</h1>
         </div>
-
-        {/* <div className="news__patchCardWrapper"> */}
         <PatchNews {...props} />
-        {/* <a href="http://yyragnarok.com/forum.php?mod=viewthread&tid=459&extra=page%3D1">
-            <div className="news__patchCard">
-              <div className="news__cover">
-                <img src={newsImg} alt="" />
-              </div>
-              <div className="news__sub">
-                <h2>Jun 7,2020</h2>
-                <h3 className="news__pn">Patch Notes</h3>
-              </div>
-            </div>
-          </a> */}
       </div>
 
       <div className="tabletWrapper-body">

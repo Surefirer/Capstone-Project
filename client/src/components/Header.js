@@ -43,7 +43,13 @@ class Header extends React.Component {
               <li>Download</li>
             </Link>
             <li>
-              <a href="http://yyragnarok.com/forum.php">Forum</a>
+              <a
+                rel="noopener noreferrer"
+                target="_blank"
+                href="http://yyragnarok.com/forum.php"
+              >
+                Forum
+              </a>
             </li>
             <li>
               Search

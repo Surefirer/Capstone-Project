@@ -41,7 +41,11 @@ const sideDrawer = (props) => {
           </li>
         </Link>
         <li>
-          <a href="http://yyragnarok.com/forum.php">
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="http://yyragnarok.com/forum.php"
+          >
             <img
               className="side-drawer__svg"
               src={Icons.commentsAlt}
@@ -93,7 +97,11 @@ const sideDrawer = (props) => {
       </ul>
       <div className="side-drawer__social">
         <div className="side-drawer__socialWrapper1">
-          <a href="https://www.youtube.com/channel/UCWSJggjVEluC4rS54BbliPQ?view_as=public">
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://www.youtube.com/channel/UCWSJggjVEluC4rS54BbliPQ?view_as=public"
+          >
             <img
               className="side-drawer__svg--social"
               src={Icons.youtube}
@@ -102,7 +110,11 @@ const sideDrawer = (props) => {
           </a>
         </div>
         <div className="side-drawer__socialWrapper2">
-          <a href="https://space.bilibili.com/514479945">
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://space.bilibili.com/514479945"
+          >
             <img
               className="side-drawer__svg--social"
               src={Icons.bilibiliTv}

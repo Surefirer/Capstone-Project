@@ -42,7 +42,9 @@
 }
 
 .side-drawer li:hover,
-.side-drawer li:active {
+.side-drawer li:active,
+.side-drawer a:hover,
+.side-drawer a:active {
     color: $mainYellow;
 }
 

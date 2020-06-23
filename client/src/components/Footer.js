@@ -20,10 +20,18 @@ function Footer() {
           </div>
 
           <div className="footer__social">
-            <a href="https://www.youtube.com/channel/UCWSJggjVEluC4rS54BbliPQ?view_as=public">
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://www.youtube.com/channel/UCWSJggjVEluC4rS54BbliPQ?view_as=public"
+            >
               <img src={Icons.youtubeBlack} alt="" />
             </a>
-            <a href="https://space.bilibili.com/514479945">
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://space.bilibili.com/514479945"
+            >
               <img src={Icons.bilibiliTvBlack} alt="" />
             </a>
           </div>

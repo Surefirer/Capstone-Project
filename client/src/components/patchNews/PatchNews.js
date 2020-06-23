@@ -44,7 +44,7 @@ export default class PatchNews extends Component {
       <div className="patchCardWrapper">
         <Slider {...settings}>
           {this.props.patchList.map((patch) => (
-            <a href={patch.forumUrl}>
+            <a rel="noopener noreferrer" target="_blank" href={patch.forumUrl}>
               <div className="patchCard">
                 <div className="news__cover">
                   <img src={patch.cover} alt="" />
