@@ -786,6 +786,12 @@ textarea::placeholder {
   padding-top: 80px;
   text-align: center;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .database__title h1 {
@@ -805,9 +811,7 @@ textarea::placeholder {
 
 .database__title img {
   width: 20px;
-  position: absolute;
-  left: 25px;
-  bottom: 10px;
+  margin-right: 10px;
 }
 
 .database__searchBox {
@@ -836,6 +840,7 @@ textarea::placeholder {
 
 .database__searchBoxWrapper input {
   width: 65%;
+  max-width: 600px;
   height: 25px;
   margin-right: 5px;
   margin-bottom: 10px;
@@ -884,6 +889,12 @@ textarea::placeholder {
   display: -ms-flexbox;
   display: flex;
   font-size: 0.8rem;
+}
+
+@media (min-width: 768px) {
+  .database img {
+    left: 35%;
+  }
 }
 
 .searchMonster-result__property {
@@ -1481,6 +1492,13 @@ caption {
 @media (min-width: 768px) {
   .download-clientWrapper {
     margin-top: 50px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .download__titleCont {
     max-width: 800px;
@@ -1489,6 +1507,10 @@ caption {
   .download__titleCont p {
     font-size: 1.5rem;
     line-height: 3.5rem;
+  }
+  .download__clientCard {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 /*# sourceMappingURL=main.css.map */

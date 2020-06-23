@@ -11,8 +11,8 @@
         padding-top: 80px;
         text-align: center;
         position: relative;
-        // display: flex;
-        // justify-content: center;
+        display: flex;
+        justify-content: center;
         h1 {
             display: inline-block;
             position: relative;
@@ -28,9 +28,7 @@
         }
         img {
             width: 20px;
-            position: absolute;
-            left: 25px;
-            bottom: 10px;
+            margin-right: 10px;
         }
     }
     &__searchBox {
@@ -45,6 +43,7 @@
         justify-content: center;
         input {
             width: 65%;
+            max-width: 600px;
             height: 25px;
             margin-right: 5px;
             margin-bottom: 10px;
@@ -77,5 +76,14 @@
         background-color: rgba(0, 0, 0, 0.6);
         display: flex;
         font-size: 0.8rem;
+    }
+}
+
+// tablet version
+@include tablet {
+    .database {
+        img {
+            left: 35%;
+        }
     }
 }
