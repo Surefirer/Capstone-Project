@@ -2,8 +2,8 @@ import React from "react";
 
 function YyPoints() {
   return (
-    <div>
-      <h1>YY Points Page:)</h1>
+    <div className="points">
+      <h1>Coming Soon...:)</h1>
     </div>
   );
 }

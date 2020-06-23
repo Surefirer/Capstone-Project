@@ -1,5 +1,5 @@
 import React from "react";
-import { Logos } from "../assets";
+//import { Logos } from "../assets";
 import { Icons } from "../assets";
 
 function Support() {

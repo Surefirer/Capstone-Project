@@ -20,15 +20,20 @@ function Download() {
       </div>
 
       <div className="download-clientWrapper">
-        <a href="https://share.weiyun.com/5BsSGXT" target="_blank">
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://share.weiyun.com/5BsSGXT"
+        >
           <div className="download__clientCard download-red">
             <img src={Icons.qqBrands} alt="" />
             <h3>QQ</h3>
           </div>
         </a>
         <a
-          href="http://www.mediafire.com/file/04d51uv7t5u7lfc/YYRO_2.0_FullClient_20200109.exe/file"
+          rel="noopener noreferrer"
           target="_blank"
+          href="http://www.mediafire.com/file/04d51uv7t5u7lfc/YYRO_2.0_FullClient_20200109.exe/file"
         >
           <div className="download__clientCard download-blue">
             <img src={Icons.mediaFire} alt="" />
