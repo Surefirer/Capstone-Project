@@ -388,8 +388,8 @@ textarea::placeholder {
   height: 400px;
   background-image: url("../assets/images/hero.png");
   background-repeat: no-repeat;
-  background-size: 170px;
-  background-position: 50% 145%;
+  background-size: 320px;
+  background-position: 50% 120px;
   color: #e4dfdf;
   margin-top: 50px;
 }
@@ -421,6 +421,7 @@ textarea::placeholder {
   width: 80%;
   line-height: 1.5rem;
   text-align: center;
+  max-width: 260px;
 }
 
 .main .news {
@@ -618,6 +619,7 @@ textarea::placeholder {
   .main__intro {
     width: 540px;
     margin-top: 20px;
+    max-width: 100%;
   }
   .main__intro p {
     font-size: 1.4rem;
@@ -669,10 +671,12 @@ textarea::placeholder {
 
 @media (min-width: 1080px) {
   .main__hero {
-    background-image: url("../assets/images/tablet_hero.png"), url("../assets/images/royalguard_f_sd2.png"), url("../assets/images/runeknight_m_sd2.png");
-    background-size: 650px, 300px, 355px;
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: 50% 160px, 7% 50%, 93% 50%;
+    background-image: url("../assets/images/tablet_hero.png");
+    background-size: 1200px;
+    background-repeat: no-repeat;
+    background-position: 50% 210px;
+    height: 90vh;
+    padding-top: 40px;
   }
   .server-intro {
     width: 50%;
@@ -1258,5 +1262,157 @@ caption {
 .pvp .pvp__table,
 .dressUp .pvp__table {
   max-width: 300px;
+}
+
+.support {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.support__title {
+  margin: 20px 0;
+  text-align: center;
+  font-family: TitilliumWeb-Bold;
+  position: relative;
+}
+
+.support__title h1 {
+  display: inline-block;
+  position: relative;
+}
+
+.support__title h1:after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height: 3px;
+  width: 80%;
+  left: calc(50% - 40%);
+  background: #c7c719;
+}
+
+.support-card-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.support-card {
+  max-width: 450px;
+  margin: 15px 15px;
+}
+
+.support-card__cont img {
+  display: none;
+}
+
+.support-card__title {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .support-card-wrapper {
+    max-width: 700px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .support-card {
+    position: relative;
+    width: 300px;
+    margin: 20px 15px;
+  }
+  .support-card__cont img {
+    display: inline-block;
+    position: absolute;
+    width: 30px;
+    top: 0;
+  }
+  .support-card__title {
+    padding-bottom: 15px;
+  }
+}
+
+@media (min-width: 1080px) {
+  .support-card-wrapper {
+    max-width: 1080px;
+  }
+  .support-card {
+    width: 300px;
+    margin: 30px;
+  }
+}
+
+.download {
+  height: 100%;
+  min-height: 100vh;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.download__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.download__logo img {
+  width: 200px;
+}
+
+.download__title {
+  padding-top: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.download__title h1 {
+  display: inline-block;
+  position: relative;
+}
+
+.download__title h1:after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height: 3px;
+  width: 80%;
+  left: calc(50% - 40%);
+  background: #c7c719;
+}
+
+.download__titleCont {
+  width: 80%;
+  max-width: 1080px;
+  margin: 25px auto;
+  line-height: 1.2rem;
+}
+
+.download__titleCont p {
+  line-height: 1.3rem;
 }
 /*# sourceMappingURL=main.css.map */

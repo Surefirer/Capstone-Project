@@ -27,7 +27,7 @@ function Information() {
 
       <div className="serverInfoTab-container">
         <table className="genInfo-table">
-          <caption>server Information</caption>
+          <caption>Server Information</caption>
           <tbody>
             <tr>
               <td>Episode</td>

@@ -6,8 +6,8 @@
         height: 400px;
         background-image: url("../assets/images/hero.png");
         background-repeat: no-repeat;
-        background-size: 170px;
-        background-position: 50% 145%;
+        background-size: 320px;
+        background-position: 50% 120px;
         color: #e4dfdf;
         margin-top: 50px;
     }
@@ -28,6 +28,7 @@
         width: 80%;
         line-height: 1.5rem;
         text-align: center;
+        max-width: 260px;
     }
     .news {
         font-family: PermanentMarker-Regular;
@@ -204,6 +205,7 @@
         &__intro {
             width: 540px;
             margin-top: 20px;
+            max-width: 100%;
             p {
                 font-size: 1.4rem;
                 line-height: 2.5rem;
@@ -248,14 +250,16 @@
     }
 }
 
-// tablet version
+// desktop version
 @include desktop {
     .main {
         &__hero {
-            background-image: url("../assets/images/tablet_hero.png"), url("../assets/images/royalguard_f_sd2.png"), url("../assets/images/runeknight_m_sd2.png");
-            background-size: 650px, 300px, 355px;
-            background-repeat: no-repeat, no-repeat, no-repeat;
-            background-position: 50% 160px, 7% 50%, 93% 50%;
+            background-image: url("../assets/images/tablet_hero.png");
+            background-size: 1200px;
+            background-repeat: no-repeat;
+            background-position: 50% 210px;
+            height: 90vh;
+            padding-top: 40px;
         }
     }
     .server-intro {

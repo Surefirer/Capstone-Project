@@ -35,6 +35,11 @@ import dice from "../assets/icons/dice.svg";
 import shieldAlt from "../assets/icons/shield-alt.svg";
 import crown from "../assets/icons/crown.svg";
 import starShooting from "../assets/icons/star-shooting.svg";
+import wrench from "../assets/icons/wrench.svg";
+import bug from "../assets/icons/bug.svg";
+import angry from "../assets/icons/angry.svg";
+import userCrown from "../assets/icons/user-crown.svg";
+import chargingStation from "../assets/icons/charging-station.svg";
 
 const Logos = {
   logo: logo,
@@ -77,6 +82,11 @@ const Icons = {
   shieldAlt: shieldAlt,
   crown: crown,
   starShooting: starShooting,
+  wrench: wrench,
+  bug: bug,
+  angry: angry,
+  userCrown: userCrown,
+  chargingStation: chargingStation,
 };
 
 export { Logos };

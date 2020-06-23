@@ -1,0 +1,40 @@
+.download {
+    height: 100%;
+    min-height: 100vh;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    &__logo {
+        display: flex;
+        justify-content: center;
+        img {
+            width: 200px;
+        }
+    }
+    &__title {
+        padding-top: 20px;
+        text-align: center;
+        position: relative;
+        h1 {
+            display: inline-block;
+            position: relative;
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: -5px;
+                height: 3px;
+                width: 80%;
+                left: calc(50% - 40%);
+                background: $underlineColor;
+            }
+        }
+    }
+    &__titleCont {
+        width: 80%;
+        max-width: 1080px;
+        margin: 25px auto;
+        line-height: 1.2rem;
+        p {
+            line-height: 1.3rem;
+        }
+    }
+}
