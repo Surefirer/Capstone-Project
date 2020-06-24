@@ -778,7 +778,6 @@ textarea::placeholder {
   min-height: 100vh;
   color: white;
   padding-bottom: 30px;
-  display: block;
 }
 
 .database__title {
