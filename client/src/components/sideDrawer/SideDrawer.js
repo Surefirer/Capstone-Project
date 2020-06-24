@@ -41,18 +41,18 @@ const sideDrawer = (props) => {
           </li>
         </Link>
         <li>
-          <a
+          {/* <a
             rel="noopener noreferrer"
             target="_blank"
             href="http://yyragnarok.com/forum.php"
-          >
-            <img
-              className="side-drawer__svg"
-              src={Icons.commentsAlt}
-              alt="questionCircle"
-            />
-            Forum
-          </a>
+          > */}
+          <img
+            className="side-drawer__svg"
+            src={Icons.commentsAlt}
+            alt="questionCircle"
+          />
+          Forum
+          {/* </a> */}
         </li>
         <Link to="/database/item">
           <li>
