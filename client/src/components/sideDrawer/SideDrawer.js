@@ -40,20 +40,20 @@ const sideDrawer = (props) => {
             Information
           </li>
         </Link>
-        <li>
-          <img
-            className="side-drawer__svg"
-            src={Icons.commentsAlt}
-            alt="questionCircle"
-          />
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="http://yyragnarok.com/forum.php"
-          >
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="http://yyragnarok.com/forum.php"
+        >
+          <li>
+            <img
+              className="side-drawer__svg"
+              src={Icons.commentsAlt}
+              alt="questionCircle"
+            />
             Forum
-          </a>
-        </li>
+          </li>
+        </a>
         <Link to="/database/item">
           <li>
             <img
