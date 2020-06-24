@@ -337,6 +337,9 @@ textarea::placeholder {
 .side-drawer__menu li {
   margin-bottom: 15px;
   font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .side-drawer__svg {
