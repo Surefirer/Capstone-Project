@@ -141,6 +141,7 @@ textarea::placeholder {
 
 .nav-bar__logo img {
   width: 80px;
+  height: 34.74px;
 }
 
 .nav-bar__clock {
@@ -308,7 +309,6 @@ textarea::placeholder {
   top: 0;
   left: 0;
   width: 100%;
-  max-width: 320px;
   z-index: 200;
   -webkit-transform: translateY(-110%);
           transform: translateY(-110%);
@@ -371,17 +371,6 @@ textarea::placeholder {
 .side-drawer a:hover,
 .side-drawer a:active {
   color: #e0e000;
-}
-
-@media (min-width: 321px) {
-  .side-drawer {
-    -webkit-transform: translateX(-110%);
-            transform: translateX(-110%);
-  }
-  .open {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
 }
 
 .backdrop {

@@ -6,7 +6,6 @@
     top: 0;
     left: 0;
     width: 100%;
-    max-width: 320px;
     z-index: 200;
     transform: translateY(-110%);
     transition: transform 0.3s ease-out;
@@ -49,11 +48,11 @@
 }
 
 // tablet version
-@include tabletSideBar {
-    .side-drawer {
-        transform: translateX(-110%);
-    }
-    .open {
-        transform: translateX(0);
-    }
-}
+// @include tabletSideBar {
+//     .side-drawer {
+//         transform: translateX(-110%);
+//     }
+//     .open {
+//         transform: translateX(0);
+//     }
+// }

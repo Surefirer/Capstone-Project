@@ -12,7 +12,7 @@
 }
 
 @mixin tabletSideBar {
-    @media (min-width: 321px) {
+    @media (min-width: 640px) {
         @content;
     }
 }
