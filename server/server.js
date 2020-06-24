@@ -14,9 +14,9 @@ const getPatchList = require("./controller/getPatchList");
 app.use(express.json());
 app.use(cors());
 
-app.get("/", (req, res) => {
-  res.send("Home Page");
-});
+// app.get("/", (req, res) => {
+//   res.send("Home Page");
+// });
 
 // serve static files, create react app build
 app.use(express.static(path.resolve(__dirname, "../client/build")));
