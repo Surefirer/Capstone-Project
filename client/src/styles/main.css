@@ -168,6 +168,10 @@ textarea::placeholder {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  .nav-bar__menu li {
+    display: block;
+    position: relative;
+  }
   .nav-bar__menu li:hover,
   .nav-bar__menu li:active,
   .nav-bar__menu a:hover,
@@ -175,20 +179,15 @@ textarea::placeholder {
     color: #e0e000;
   }
   .nav-bar__subMenu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    left: 0;
     display: none;
     background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
   }
   .nav-bar__subMenu li {
     margin: 5px 0;
     padding: 5px;
-    display: block;
+    clear: both;
   }
   .nav-bar__subMenu li:hover,
   .nav-bar__subMenu li:active {
