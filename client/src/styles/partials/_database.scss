@@ -8,12 +8,14 @@
     color: white;
     padding-bottom: 30px;
     &__title {
+        width: 250px;
         padding-top: 80px;
         text-align: center;
         position: relative;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+        margin: 0 auto;
+        // display: flex;
+        // justify-content: center;
+        // flex-wrap: wrap;
         h1 {
             display: inline-block;
             position: relative;
@@ -30,6 +32,8 @@
         img {
             width: 20px;
             margin-right: 10px;
+            position: absolute;
+            bottom: 10px;
         }
     }
     &__searchBox {
@@ -81,10 +85,10 @@
 }
 
 // tablet version
-@include tablet {
-    .database {
-        img {
-            left: 35%;
-        }
-    }
-}
+// @include tablet {
+//     .database {
+//         img {
+//             left: 35%;
+//         }
+//     }
+// }

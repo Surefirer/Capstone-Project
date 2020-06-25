@@ -779,17 +779,11 @@ textarea::placeholder {
 }
 
 .database__title {
+  width: 250px;
   padding-top: 80px;
   text-align: center;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  margin: 0 auto;
 }
 
 .database__title h1 {
@@ -810,6 +804,8 @@ textarea::placeholder {
 .database__title img {
   width: 20px;
   margin-right: 10px;
+  position: absolute;
+  bottom: 10px;
 }
 
 .database__searchBox {
@@ -887,12 +883,6 @@ textarea::placeholder {
   display: -ms-flexbox;
   display: flex;
   font-size: 0.8rem;
-}
-
-@media (min-width: 768px) {
-  .database img {
-    left: 35%;
-  }
 }
 
 .searchMonster-result__property {
