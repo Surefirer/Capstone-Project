@@ -214,6 +214,8 @@ textarea::placeholder {
 /* show submenu on hover*/
 .nav-bar__menu li:hover > .nav-bar__subMenu {
   display: block;
+  -webkit-animation: slideup 0.5s ease;
+          animation: slideup 0.5s ease;
 }
 
 /* Animation Keyframes */
