@@ -1105,6 +1105,14 @@ caption {
   padding: 0 20px;
 }
 
+.review-card:focus {
+  outline: none;
+}
+
+.patchCardWrapper a {
+  outline: none;
+}
+
 .patchCard {
   color: #323232;
   width: 300px;
