@@ -215,9 +215,14 @@ class MonsterSummary extends Component {
                   <td>{this.state.mobs.drops[index].chance}</td>
                   <td>{this.state.mobs.drops[index].serverTypeName}</td>
                   {this.state.mobs.drops[index].stealProtected === true ? (
-                    <td>是</td>
+                    <td>
+                      {" "}
+                      <img src={Icons.checkGreen} alt="" />
+                    </td>
                   ) : (
-                    <td>否</td>
+                    <td>
+                      <img src={Icons.timesRed} alt="" />
+                    </td>
                   )}
                 </tr>
               </tbody>

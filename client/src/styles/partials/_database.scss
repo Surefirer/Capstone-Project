@@ -7,6 +7,7 @@
     min-height: 100vh;
     color: white;
     padding-bottom: 30px;
+    text-align: center;
     &__title {
         width: 250px;
         padding-top: 80px;
@@ -81,6 +82,14 @@
         background-color: rgba(0, 0, 0, 0.6);
         display: flex;
         font-size: 0.8rem;
+    }
+}
+
+.searchItem-result {
+    &__itemMoveinfo {
+        img {
+            width: 15px;
+        }
     }
 }
 

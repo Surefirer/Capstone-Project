@@ -777,6 +777,7 @@ textarea::placeholder {
   min-height: 100vh;
   color: white;
   padding-bottom: 30px;
+  text-align: center;
 }
 
 .database__title {
@@ -884,6 +885,18 @@ textarea::placeholder {
   display: -ms-flexbox;
   display: flex;
   font-size: 0.8rem;
+}
+
+.searchItem-result__itemMoveinfo img {
+  width: 15px;
+}
+
+.searchMonster-result {
+  text-align: center;
+}
+
+.searchMonster-result img {
+  width: 15px;
 }
 
 .searchMonster-result__property {
