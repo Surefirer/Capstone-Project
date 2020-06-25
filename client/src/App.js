@@ -16,6 +16,7 @@ import searchMonster from "./components/pages/SearchMonster";
 import ItemSummary from "./components/pages/ItemSummary";
 import MonsterSummary from "./components/pages/MonsterSummary";
 import ScroolToTop from "./components/scrollToTop/scrollToTop";
+import ScrollToTopRoute from "./components/scrollToTop/ScrollToTopRoute";
 
 class App extends React.Component {
   state = {
@@ -85,6 +86,7 @@ class App extends React.Component {
           />
           {backdrop}
         </div>
+        <ScrollToTopRoute />
         <Switch>
           <Route
             path="/"
