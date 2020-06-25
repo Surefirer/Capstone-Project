@@ -141,7 +141,7 @@ textarea::placeholder {
 
 .nav-bar__logo img {
   width: 80px;
-  height: 34.74px;
+  height: 35px;
 }
 
 .nav-bar__clock {
@@ -172,6 +172,9 @@ textarea::placeholder {
     display: block;
     position: relative;
   }
+  .nav-bar__menu li a {
+    margin-bottom: 5px;
+  }
   .nav-bar__menu li:hover,
   .nav-bar__menu li:active,
   .nav-bar__menu a:hover,
@@ -185,7 +188,6 @@ textarea::placeholder {
     position: absolute;
   }
   .nav-bar__subMenu li {
-    margin: 5px 0;
     padding: 5px;
     clear: both;
   }
@@ -211,11 +213,7 @@ textarea::placeholder {
 
 /* show submenu on hover*/
 .nav-bar__menu li:hover > .nav-bar__subMenu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-animation: slideup 0.5s ease;
-          animation: slideup 0.5s ease;
+  display: block;
 }
 
 /* Animation Keyframes */
@@ -950,6 +948,7 @@ caption {
 
 .staffs__logo img {
   width: 200px;
+  height: 89px;
 }
 
 .staffs__title {
@@ -1155,6 +1154,7 @@ caption {
 
 .information__logo img {
   width: 200px;
+  height: 89px;
 }
 
 .information__title {
@@ -1402,6 +1402,7 @@ caption {
 
 .download__logo img {
   width: 200px;
+  height: 89px;
 }
 
 .download__title {

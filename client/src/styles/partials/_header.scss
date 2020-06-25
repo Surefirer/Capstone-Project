@@ -18,7 +18,7 @@
     }
     &__logo img {
         width: 80px;
-        height: 34.74px;
+        height: 35px;
     }
     &__clock {
         display: none;
@@ -45,6 +45,9 @@
             li {
                 display: block;
                 position: relative;
+                a {
+                    margin-bottom: 5px;
+                }
             }
             li:hover,
             li:active,
@@ -55,17 +58,12 @@
         }
         &__subMenu {
             left: 0;
-            // flex-direction: column;
             display: none;
             background-color: rgba(0, 0, 0, 0.5);
             position: absolute;
             li {
-                margin: 5px 0;
                 padding: 5px;
                 clear: both;
-                // display: block;
-                // float: left;
-                // position: relative;
             }
             li:hover,
             li:active {
@@ -91,8 +89,8 @@
 /* show submenu on hover*/
 
 .nav-bar__menu li:hover>.nav-bar__subMenu {
-    display: flex;
-    animation: slideup 0.5s ease;
+    display: block;
+    // animation: slideup 0.5s ease;
 }
 
 
