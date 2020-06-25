@@ -1115,6 +1115,10 @@ caption {
   margin: 0 auto;
 }
 
+.patchCard:hover {
+  border: 0.1rem solid #e0e000;
+}
+
 .newsSub {
   display: -webkit-box;
   display: -ms-flexbox;
