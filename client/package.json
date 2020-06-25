@@ -16,7 +16,8 @@
         "react-scripts": "3.4.1",
         "react-slick": "^0.26.1",
         "react-use": "^15.3.0",
-        "slick-carousel": "^1.8.1"
+        "slick-carousel": "^1.8.1",
+        "smoothscroll-polyfill": "^0.4.4"
     },
     "scripts": {
         "start": "react-scripts start",

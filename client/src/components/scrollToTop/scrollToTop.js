@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Icons } from "../assets";
 import { useWindowScroll } from "react-use";
+import smoothscroll from "smoothscroll-polyfill";
 
 const ScrollToTop = () => {
+  smoothscroll.polyfill();
   const { y: pageYOffset } = useWindowScroll();
   const [visible, setVisiblity] = useState(false);
 
