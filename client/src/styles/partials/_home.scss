@@ -40,7 +40,6 @@
         margin: 15px auto;
         background-color: #fafafa;
         color: black;
-        // width: 100%;
         &__patchCard {
             color: $black;
             width: 300px;
@@ -85,10 +84,8 @@
         }
     }
     .server-intro {
-        // height: 390px;
         background-color: #fafafa;
         text-align: center;
-        // margin-bottom: 15px;
         padding: 15px 0;
         &__title {
             font-family: TitilliumWeb-Bold;
@@ -113,10 +110,8 @@
         }
     }
     .monthly-stat {
-        // height: 640px;
         background-color: #fafafa;
         text-align: center;
-        // margin: 15px 0;
         padding-bottom: 50px;
         &__title {
             font-family: TitilliumWeb-Bold;
