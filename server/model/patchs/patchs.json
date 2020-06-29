@@ -1,4 +1,11 @@
 [{
+        "id": "p6",
+        "name": "PATCH NOTES",
+        "date": "June 28, 2020",
+        "cover": "http://yyragnarok.com/images/patchCover/patchCover06.png",
+        "forumUrl": "http://yyragnarok.com/forum.php?mod=viewthread&tid=474&extra=page%3D1"
+    },
+    {
         "id": "p0",
         "name": "PATCH NOTES",
         "date": "JUN 7, 2020",
