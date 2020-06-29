@@ -13,6 +13,6 @@ This is fully functional and ready to deploy the gaming website. It has all the 
 ## Future Development
 
 - User login system
-  - Player will be able to use in-game account to log in in the website, user will be able to view in-game states via website.
+  - The player will be able to use an in-game account to log in to the website, the user will be able to view in-game states via the website.
 - live market feature
-  - User will be able to see live market when they search item/monster via website, the live market will display vender who is selling the item that be searched live in the game.
+  - User will be able to see the live market when they search item/monster via the website, the live market will display vendor who is selling the item that is searched live in the game.
