@@ -13,8 +13,8 @@ function Download() {
         <div className="download__titleCont">
           <p>The YYRO client is all you need to begin your adventure! </p>
           <p>
-            Make surethat you run the patcher after you finishing your
-            installation
+            Make sure that you run the patcher after you finishing your
+            installation.
           </p>
         </div>
       </div>
