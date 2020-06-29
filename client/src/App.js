@@ -54,7 +54,7 @@ class App extends React.Component {
     });
     axios.get("/patchs").then((response) => {
       this.setState({
-        patchList: response.data,
+        patchList: response.data.slice(0, 4),
       });
     });
   }
