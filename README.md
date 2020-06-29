@@ -4,7 +4,13 @@
 
 This is fully functional and ready to deploy the gaming website. It has all the essential elements required for a gaming website. The website is fully responsive for mobile, tablet, and desktop. It is also fully compatible with ios and android devices.
 
-Website live demo: https://yyragnarok.herokuapp.com/
+## Website live demo
+
+https://yyragnarok.herokuapp.com/
+
+## Video Demo
+
+[![Watch the video](https://i.ibb.co/Zdk28yL/capstone-demo-001.jpg)](https://youtu.be/LJzT-5FDwyo)
 
 ## Tech Stack
 
