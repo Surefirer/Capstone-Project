@@ -770,10 +770,12 @@ textarea::placeholder {
 }
 
 .database {
-  background-image: url(../assets/images/bio_3.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background: #000000;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left bottom, left top, from(#434343), to(#000000));
+  background: linear-gradient(to top, #434343, #000000);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   height: 100%;
   min-height: 100vh;
   color: white;
@@ -933,10 +935,12 @@ caption {
 }
 
 .staffs {
-  background-image: url(../assets/images/bio_3.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background: #000000;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left bottom, left top, from(#434343), to(#000000));
+  background: linear-gradient(to top, #434343, #000000);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   height: 100%;
   min-height: 100vh;
   padding-top: 80px;
