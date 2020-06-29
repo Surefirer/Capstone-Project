@@ -4,6 +4,8 @@
 
 This is fully functional and ready to deploy the gaming website. It has all the essential elements required for a gaming website. The website is fully responsive for mobile, tablet, and desktop. It is also fully compatible with ios and android devices.
 
+Website live demo: https://yyragnarok.herokuapp.com/
+
 ## Tech Stack
 
 - React for the front-end
