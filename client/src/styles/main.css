@@ -1123,6 +1123,11 @@ caption {
   outline: none;
 }
 
+.TestimonialsCardWrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
 .patchCardWrapper a {
   outline: none;
 }

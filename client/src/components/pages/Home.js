@@ -87,8 +87,9 @@ function Home(props) {
           </div>
         </div>
       </div>
-
-      <TestimonialsCard {...props} />
+      <div className="TestimonialsCardWrapper">
+        <TestimonialsCard {...props} />
+      </div>
     </div>
   );
 }
