@@ -14,9 +14,9 @@ https://yyragnarok.herokuapp.com/
 
 ## Tech Stack
 
-- React for the front-end
-- Node js and Express for the back-end
-- A third-party API for data search
+- React for the front-end.
+- Node js and Express for the back-end.
+- A third-party API for data search.
 
 ## Future Development
 
